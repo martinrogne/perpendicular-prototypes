@@ -100,7 +100,7 @@ jobs:
 
     - name: Debug
       shell: bash
-        run: ls -l
+      run: ls -l
 
     - name: Publish
       uses: netlify/actions/cli@master

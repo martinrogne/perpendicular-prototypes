@@ -27,6 +27,7 @@ jobs:
       uses: TriPSs/conventional-changelog-action@v3
       with:
         github-token: ${{ secrets.ADMIN_TOKEN_GITHUB }}
+        git-user-name: github-actions
         output-file: "false"
 
     - name: Install

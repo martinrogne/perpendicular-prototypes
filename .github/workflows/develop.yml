@@ -6,42 +6,9 @@ on:
 name: Develop
 jobs:
 
-#  build:
-#    runs-on: ubuntu-latest
-
-#    steps:
-#    - uses: actions/checkout@v2
-
-#    - name: Cache node modules
-#      uses: actions/cache@v1
-#      with:
-#        path: ~/.npm
-#        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-#        restore-keys: |
-#          ${{ runner.os }}-node-
-
-#    - name: Node
-#      uses: actions/setup-node@v1
-#      with:
-#        node-version: '12.x'
-
-#    - name: Install
-#      run:
-#        npm install
-
-#    - name: Build
-#      run:
-#        npm run ci:build
-
-#    - name: Upload build artifacts
-#      uses: actions/upload-artifact@v2
-#      with:
-#        name: artifacts
-#        path: dist
-
-  publish:
+  release:
     runs-on: ubuntu-latest
-#    needs: build
+    needs: build
 
     steps:
     - uses: actions/checkout@v2
@@ -56,25 +23,31 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
 
-#    - name: Download build artifacts
-#      uses: actions/download-artifact@v2
-#      with:
-#        name: artifacts
-
-#    - name: Publish
-#      uses: netlify/actions/cli@master
-#      with:
-#        args: deploy --prod --dir=demo
-#      env:
-#        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-#        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-
     - name: Conventional Changelog Action
       id: changelog
       uses: TriPSs/conventional-changelog-action@v3
       with:
         github-token: ${{ secrets.ADMIN_TOKEN_GITHUB }}
         output-file: "false"
+
+    - name: Install
+      if: ${{ steps.changelog.outputs.skipped == 'false' }}
+      run:
+        npm install
+
+    - name: Build
+      if: ${{ steps.changelog.outputs.skipped == 'false' }}
+      run:
+        npm run ci:build
+
+    - name: Publish
+      uses: netlify/actions/cli@master
+      if: ${{ steps.changelog.outputs.skipped == 'false' }}
+      with:
+        args: deploy --prod --dir=demo
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
     - name: Create Release
       uses: actions/create-release@v1
@@ -85,3 +58,4 @@ jobs:
         tag_name: ${{ steps.changelog.outputs.tag }}
         release_name: ${{ steps.changelog.outputs.tag }}
         body: ${{ steps.changelog.outputs.clean_changelog }}
+        prerelease: true

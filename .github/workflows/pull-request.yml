@@ -82,10 +82,26 @@ jobs:
       run:
         npm run ci:build
 
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: artifacts
+        path: dist
+
+  preview:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    - name: Download build artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: artifacts
+
     - name: Publish
       uses: netlify/actions/cli@master
       with:
-        args: deploy --dir=dist/demo
+        args: deploy --dir=demo
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

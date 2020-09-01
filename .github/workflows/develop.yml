@@ -3,7 +3,7 @@ on:
     branches:
     - develop
 
-name: Build Angular
+name: Develop
 jobs:
 
 #  build:

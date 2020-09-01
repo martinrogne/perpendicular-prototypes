@@ -98,14 +98,10 @@ jobs:
       with:
         name: artifacts
 
-    - name: Debug
-      shell: bash
-      run: ls -l
-
     - name: Publish
       uses: netlify/actions/cli@master
       with:
-        args: deploy --dir=dist/demo
+        args: deploy --dir=demo
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

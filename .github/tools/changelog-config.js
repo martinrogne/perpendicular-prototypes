@@ -1,7 +1,10 @@
-'use strict'
-const config = require('conventional-changelog-conventionalcommits');
-
-console.log('config: ', config);
-
-module.exports = config({
-});
+module.exports = {
+  gitRawCommitsOpts: {
+    merges: null,
+  },
+  parserOpts: {
+    issuePrefixes: [
+      '#'
+    ],
+  },
+};

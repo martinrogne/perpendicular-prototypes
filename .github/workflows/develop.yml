@@ -23,6 +23,10 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
 
+    - name: Install
+      run:
+        npm install
+
     - name: Conventional Changelog Action
       id: changelog
       uses: TriPSs/conventional-changelog-action@v3
@@ -30,12 +34,6 @@ jobs:
         config-file-path: .github/tools/changelog-config.js
         github-token: ${{ secrets.ADMIN_TOKEN_GITHUB }}
         output-file: "false"
-
-
-    - name: Install
-      if: ${{ steps.changelog.outputs.skipped == 'false' }}
-      run:
-        npm install
 
     - name: Build
       if: ${{ steps.changelog.outputs.skipped == 'false' }}

@@ -92,16 +92,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      steps:
-      - name: Download build artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: artifacts
+    - name: Download build artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: artifacts
 
     - name: Publish
-        uses: netlify/actions/cli@master
-        with:
-          args: deploy --dir=dist/demo
-        env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      uses: netlify/actions/cli@master
+      with:
+        args: deploy --dir=dist/demo
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

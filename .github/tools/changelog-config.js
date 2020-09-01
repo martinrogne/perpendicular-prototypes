@@ -1,5 +1,5 @@
 'use strict'
-const config = require('conventional-changelog-angular');
+const config = require('conventional-changelog-conventionalcommits');
 
 console.log('config: ', config);
 

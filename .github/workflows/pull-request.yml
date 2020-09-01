@@ -1,5 +1,5 @@
 on: pull_request
-name: Build Angular
+name: Pull Request
 jobs:
   lint:
     runs-on: ubuntu-latest

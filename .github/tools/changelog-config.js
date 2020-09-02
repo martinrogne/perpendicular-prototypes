@@ -2,11 +2,9 @@
 const config = require('conventional-changelog-angular');
 
 config.then(x => {
-  console.log('resolved: ', x);
-
   x.recommendedBumpOpts.whatBump = (commits) => {
-    console.log('whatBumpOverride');
 
+    // custom - we consider everything to be a patch
     return {
       level: 2,
       reason: 'static'

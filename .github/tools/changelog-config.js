@@ -1,6 +1,8 @@
 'use strict'
 const config = require('conventional-changelog-conventionalcommits');
 
-console.log('config log: ', config);
+const f = config({});
 
-module.exports = config;
+console.log('config: ', f);
+
+module.exports = f;

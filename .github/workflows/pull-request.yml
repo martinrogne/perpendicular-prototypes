@@ -91,39 +91,6 @@ jobs:
       run:
         npm install
 
-    - name: Build
-      run:
-        npm run ci:build
-
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: artifacts
-        path: dist
-
-  translate:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Cache node modules
-      uses: actions/cache@v1
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-
-    - name: Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-
-    - name: Install
-      run:
-        npm install
-
     - name: Translate
       run:
         npm run ci:translate
@@ -133,6 +100,16 @@ jobs:
         npm run ci:sync-translations
       env:
         POEDITOR_API_KEY: ${{ secrets.POEDITOR_API_KEY }}
+
+    - name: Build
+      run:
+        npm run ci:build
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: artifacts
+        path: dist
 
   preview:
     runs-on: ubuntu-latest

@@ -1,0 +1,11 @@
+{
+  "apiToken":"${POEDITOR_API_KEY}",
+  "projectId":"370505",
+  "importLanguage": "la",
+  "importFile":"projects/demo/i18n/messages.xmb",
+  "importSyncTerms": 1,
+  "exportDir":"i18n",
+  "exportFiles":{
+    "en":"messages.en.xtb"
+  }
+}

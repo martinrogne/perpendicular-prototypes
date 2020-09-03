@@ -12,7 +12,7 @@
     "ci:test": "ng test --watch=false --browsers=chromeHeadless",
     "ci:lint": "ng lint",
     "ci:translate": "ng xi18n --format=xmb --outFile=i18n/messages.xmb",
-    "ci:sync-translations": "poeditor --config=./.github/tools/poeditor.json"
+    "ci:sync-translations": "poeditor --config=./.github/tools/poeditor.js"
   },
   "private": true,
   "dependencies": {

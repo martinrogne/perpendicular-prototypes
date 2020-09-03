@@ -1,4 +1,4 @@
-{
+module.exports = {
   "apiToken":"8e3ca378ce91a96105059a9a2d7c1968",
   "projectId":"370505",
   "importLanguage": "la",

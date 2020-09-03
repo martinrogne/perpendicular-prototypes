@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ci:build": "ng build --prod",
+    "ci:build": "ng build --prod --localize",
     "ci:test": "ng test --watch=false --browsers=chromeHeadless",
     "ci:lint": "ng lint",
     "ci:translate": "ng xi18n --format=xmb --outFile=i18n/messages.xmb",

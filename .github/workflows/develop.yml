@@ -54,7 +54,7 @@ jobs:
       uses: netlify/actions/cli@master
       if: ${{ steps.changelog.outputs.skipped == 'false' }}
       with:
-        args: deploy --prod --dir=dist/demo
+        args: deploy --prod --dir=dist/demo/en
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

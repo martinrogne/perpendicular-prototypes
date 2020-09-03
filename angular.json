@@ -17,9 +17,8 @@
       "sourceRoot": "projects/demo/src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "la",
         "locales": {
-          "en": "i18n/messages.en.xtb"
+          "en": "projects/demo/i18n/messages.en.xtb"
         }
       },
       "architect": {

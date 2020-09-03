@@ -19,7 +19,7 @@
       "i18n": {
         "sourceLocale": "la",
         "locales": {
-          "en": "i18n/messages.en.xlf"
+          "en": "i18n/messages.en.xtb"
         }
       },
       "architect": {

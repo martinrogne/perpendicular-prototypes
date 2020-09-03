@@ -16,6 +16,11 @@
       "root": "projects/demo",
       "sourceRoot": "projects/demo/src",
       "prefix": "app",
+      "i18n": {
+        "locales": {
+          "en": "projects/demo/i18n/messages.en.xtb"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

@@ -8,9 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ci:build": "ng build --prod",
+    "ci:build": "ng build --prod --localize",
     "ci:test": "ng test --watch=false --browsers=chromeHeadless",
-    "ci:lint": "ng lint"
+    "ci:lint": "ng lint",
+    "ci:translate": "ng xi18n --format=xmb --outFile=i18n/messages.xmb",
+    "ci:sync-translations": "poeditor --config=./.github/tools/poeditor.json"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +21,7 @@
     "@angular/compiler": "~10.0.14",
     "@angular/core": "~10.0.14",
     "@angular/forms": "~10.0.14",
+    "@angular/localize": "^10.0.14",
     "@angular/platform-browser": "~10.0.14",
     "@angular/platform-browser-dynamic": "~10.0.14",
     "@angular/router": "~10.0.14",
@@ -42,6 +45,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "poeditor-connector": "^1.0.2",
     "protractor": "~7.0.0",
     "puppeteer": "^5.2.1",
     "ts-node": "~8.3.0",

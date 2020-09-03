@@ -35,6 +35,16 @@ jobs:
         github-token: ${{ secrets.ADMIN_TOKEN_GITHUB }}
         output-file: "false"
 
+    - name: Translate
+      run:
+        npm run ci:translate
+
+    - name: Sync translations
+      run:
+        npm run ci:sync-translations
+      env:
+        POEDITOR_API_KEY: ${{ secrets.POEDITOR_API_KEY }}
+
     - name: Build
       if: ${{ steps.changelog.outputs.skipped == 'false' }}
       run:
@@ -58,4 +68,4 @@ jobs:
         tag_name: ${{ steps.changelog.outputs.tag }}
         release_name: ${{ steps.changelog.outputs.tag }}
         body: ${{ steps.changelog.outputs.clean_changelog }}
-        prerelease: true
+        prerelease: false

@@ -136,6 +136,20 @@
     "template-banana-in-box": true,
     "template-no-negated-async": true,
     "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true
+    "use-pipe-transform-interface": true,
+
+    // Custom - accessibility rules
+    "template-accessibility-label-for": true,
+    "template-accessibility-alt-text": true,
+    "template-click-events-have-key-events": true,
+    "template-mouse-events-have-key-events": true,
+    "template-accessibility-tabindex-no-positive": true,
+    "template-accessibility-table-scope": true,
+    "template-accessibility-valid-aria": true,
+    "template-no-autofocus": true,
+    "template-no-distracting-elements": true,
+
+    // Custom - maintainability
+    "template-i18n": [true, "check-id"]
   }
 }

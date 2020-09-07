@@ -32,6 +32,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
+      env:
+        NPM_TOKEN_PERPENDICULAR: ${{ secrets.NPM_TOKEN_PERPENDICULAR }}
 
     - name: Install
       run:

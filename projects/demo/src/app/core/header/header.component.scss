@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  background-color: var(--color-light);
+}
+
+.center {
+  margin: auto;
+  align-items: center;
+  flex-grow: 1;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+svg {
+  display: block;
+  width: 3em;
+  height: 3em;
+  fill: var(--color-primary);
+}

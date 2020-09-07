@@ -1,0 +1,17 @@
+<div class="left">
+  <a [routerLink]="['/']" aria-label="Frontpage">
+    <svg>
+      <use xlink:href="assets/icons/home.svg#home"></use>
+    </svg>
+  </a>
+</div>
+<div class="center">
+  <app-search-bar></app-search-bar>
+</div>
+<div class="right">
+  <a aria-label="Cart" [routerLink]="['/', 'checkout']">
+    <svg>
+      <use xlink:href="assets/icons/shopping_cart.svg#shopping_cart"></use>
+    </svg>
+  </a>
+</div>

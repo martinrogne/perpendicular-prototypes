@@ -1,0 +1,25 @@
+.search {
+  background-color: inherit;
+  display: flex;
+}
+
+input {
+  background-color: inherit;
+  border: none;
+  flex-grow: 1;
+}
+
+button {
+  display: block;
+  padding: 0px;
+  border: none;
+  background: none;
+  height: 3em;
+}
+
+svg {
+  display: block;
+  width: 3em;
+  height: 3em;
+  fill: var(--color-primary);
+}

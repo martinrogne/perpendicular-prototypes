@@ -1,0 +1,11 @@
+:host {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 1fr;
+  grid-gap: var(--space-md);
+}
+
+app-facets {
+  grid-row: 1;
+  grid-column: 1;
+}

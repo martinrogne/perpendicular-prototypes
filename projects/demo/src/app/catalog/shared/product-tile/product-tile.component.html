@@ -1,0 +1,14 @@
+<div *ngIf="product">
+  <a [routerLink]="['/', 'catalog', 'product', product.seotoken ]">
+    <div class="image-container">
+      <img [src]="product.thumbnailImage" alt="Product image" width="200" height="310" />
+    </div>
+    <h2 class="name">
+      {{ product.name }}
+    </h2>
+    <p class="price">
+      {{ product.offerPrice | currency }}
+    </p>
+  </a>
+  <button appAddToCart [product]="product" class="button primary">Add</button>
+</div>

@@ -1,0 +1,19 @@
+<select class="select" (change)="changeSorting($event)">
+  <option *ngFor="let method of sortingMethods" [value]="method" [selected]="method === selectedSortingMethod">
+    <ng-container *ngIf="method === sortMethod.MANUFACTURER">
+      Manufacturer
+    </ng-container>
+    <ng-container *ngIf="method === sortMethod.PRICE_ASC">
+      Price, ascending
+    </ng-container>
+    <ng-container *ngIf="method === sortMethod.PRICE_DESC">
+      Price, descending
+    </ng-container>
+    <ng-container *ngIf="method === sortMethod.PRODUCTNAME">
+      Name
+    </ng-container>
+    <ng-container *ngIf="method === sortMethod.RELEVANCY">
+      Relevancy
+    </ng-container>
+  </option>
+</select>

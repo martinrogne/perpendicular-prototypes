@@ -1,0 +1,11 @@
+<fieldset *ngFor="let facet of facets" class="tile">
+  <legend>
+    <h4>
+      {{ facet.name }}
+    </h4>
+  </legend>
+  <label *ngFor="let value of facet.values">
+    <input type="checkbox" (click)="toggleFacet(value.value)" [checked]="isFacetToggled(value.value)"/>
+    {{ value.name}} ({{value.count}})
+  </label>
+</fieldset>

@@ -1,0 +1,37 @@
+:root {
+  /* Generated from colormind.io */
+  --color-light: #EACEAF;
+  --color-light-accent: #71ACC0;
+  --color-primary: #2BAED7;
+  --color-dark-accent: #61627C;
+  --color-dark: #1A221C;
+
+  /* Base colors */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /** Semantic colors */
+  --color-text: var(--color-dark);
+  --color-text-heading: var(--color-dark-accent);
+  --color-link: var(--color-primary);
+
+  --color-background: var(--color-light);
+
+  --color-border: var(--color-primary);
+}
+
+body {
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-text-heading);
+}
+
+a {
+  color: var(--color-link);
+
+  &:visited {
+    color: var(--color-link);
+  }
+}

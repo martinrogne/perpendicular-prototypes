@@ -1,0 +1,55 @@
+:root {
+  /** font family */
+  --font-primary: Fira Sans, sans-serif;
+  --font-secondary: Cormorant Garamond, serif;
+
+  /** body font size */
+  --text-base-size: 1em;
+
+  /** type scale */
+  --text-scale-ratio: 1.2;
+  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+  --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
+
+  /** line-height */
+  --body-line-height: 1.4;
+  --heading-line-height: 1.2;
+}
+
+body {
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
+  font-display: swap;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  line-height: var(--heading-line-height);
+}
+
+h1 {
+  font-size: var(--text-xxl);
+}
+
+h2 {
+  font-size: var(--text-xl);
+}
+
+h3 {
+  font-size: var(--text-lg);
+}
+
+h4 {
+  font-size: var(--text-md);
+}
+
+p {
+  line-height: var(--body-line-height);
+}

@@ -1,8 +1,21 @@
-.foobar {
+:host {
+  min-height: 100%;
   height: 100%;
+  display: flex;
+  flex-flow: column;
+  flex: 1;
 }
 
-#fi {
-  background-color: red;
-  fx: 1234;
+header {
+
+}
+
+main {
+  padding: var(--space-md);
+  flex: 1;
+  flex-grow: 1;
+}
+
+footer {
+
 }

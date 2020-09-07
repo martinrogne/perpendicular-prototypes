@@ -1,0 +1,37 @@
+:host {
+  display: block;
+  height: 100%;
+  padding: var(--space-xxs);
+  min-height: 471px;
+}
+
+h2 {
+  text-align: center;
+  min-height: calc(2em * var(--heading-line-height));
+  max-height: calc(2em * var(--heading-line-height));
+  overflow: hidden;
+  margin-top: var(--space-xxs);
+
+}
+
+img {
+  margin: auto;
+}
+
+button {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.price {
+  text-align: center;
+}
+
+.doesnotexst {
+  color: red;
+  colz: 1234;
+}

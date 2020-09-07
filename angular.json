@@ -18,7 +18,9 @@
       "prefix": "app",
       "i18n": {
         "locales": {
-          "en": "projects/demo/i18n/messages.en.xtb"
+          "en": {
+            "translation": "projects/demo/i18n/messages.en.xtb"
+          }
         }
       },
       "architect": {

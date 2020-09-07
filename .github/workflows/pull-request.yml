@@ -36,6 +36,8 @@ jobs:
     - name: Install
       run:
         npm install
+      env:
+        NPM_TOKEN_PERPENDICULAR: ${{ secrets.NPM_TOKEN_PERPENDICULAR }}
 
     - name: Lint
       run:
@@ -63,6 +65,8 @@ jobs:
     - name: Install
       run:
         npm install
+      env:
+        NPM_TOKEN_PERPENDICULAR: ${{ secrets.NPM_TOKEN_PERPENDICULAR }}
 
     - name: Test
       run:
@@ -90,6 +94,8 @@ jobs:
     - name: Install
       run:
         npm install
+      env:
+        NPM_TOKEN_PERPENDICULAR: ${{ secrets.NPM_TOKEN_PERPENDICULAR }}
 
     - name: Translate
       run:

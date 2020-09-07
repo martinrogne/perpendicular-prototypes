@@ -28,7 +28,6 @@ export class ProductPageComponent implements OnInit {
    * Angular lifecycle hook
    */
   ngOnInit(): void {
-    console.log('Do not prune me!');
   }
 
 }

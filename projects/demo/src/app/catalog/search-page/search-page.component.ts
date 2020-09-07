@@ -30,7 +30,6 @@ export class SearchPageComponent implements OnInit {
    * Angular lifecycle hook
    */
   public ngOnInit(): void {
-    console.log('Are we called - baseline');
   }
 
 }

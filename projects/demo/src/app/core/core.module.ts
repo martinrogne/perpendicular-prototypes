@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { APP_BASE_HREF, CommonModule, DOCUMENT } from '@angular/common';
 import {
   getOriginHost, getOriginUrl,
@@ -91,6 +91,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PrototypeRoutableProductSearchService } from './services/prototype-routable-product-search.service';
 import { PrototypeProductFactory } from './factories/prototype-product.factory';
 import { Angulartics2Module } from 'angulartics2';
+import { PrototypeCookieService } from './services/prototype-cookie-service';
 
 /**
  * Core module, containing all root-level initialization
@@ -126,7 +127,6 @@ import { Angulartics2Module } from 'angulartics2';
   providers: [
     // Perpendicular configuration
     ...APP_CONFIG_BINDINGS,
-    { provide: APP_BASE_HREF, useValue: '/', },
     { provide: PRODUCTSEARCH_DEFAULT_PAGESIZE, useValue: 24 },
     { provide: PRODUCTSEARCH_SEARCHTYPE, useValue: '100'},
 
@@ -135,6 +135,7 @@ import { Angulartics2Module } from 'angulartics2';
 
     // Prototype services
     { provide: IProductSearchService, useClass: PrototypeRoutableProductSearchService },
+    { provide: ICookieService, useClass: PrototypeCookieService },
 
     // Prototype factories
     { provide: IProductFactory, useClass: PrototypeProductFactory },

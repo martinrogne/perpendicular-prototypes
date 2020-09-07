@@ -23,7 +23,6 @@ export class ProductGridComponent implements OnInit {
    * Angular lifecycle hook
    */
   ngOnInit(): void {
-    console.log('products: ', this.products);
   }
 
   /**

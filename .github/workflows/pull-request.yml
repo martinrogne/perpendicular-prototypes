@@ -15,6 +15,8 @@ jobs:
 
 
   lint:
+    env:
+      NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     runs-on: ubuntu-latest
 
     steps:
@@ -32,14 +34,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-      env:
-        NPM_TOKEN_PERPENDICULAR: ${{ secrets.NPM_TOKEN_PERPENDICULAR }}
 
     - name: Install
       run:
         npm install
-      env:
-        NPM_TOKEN_PERPENDICULAR: ${{ secrets.NPM_TOKEN_PERPENDICULAR }}
 
     - name: Lint
       run:

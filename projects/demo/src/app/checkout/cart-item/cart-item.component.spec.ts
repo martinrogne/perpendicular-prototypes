@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CartItemComponent } from './cart-item.component';
+import { MocksModule } from '../../mocks/mocks.module';
 
 describe('CartItemComponent', () => {
   let component: CartItemComponent;
@@ -8,6 +9,9 @@ describe('CartItemComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        MocksModule
+      ],
       declarations: [ CartItemComponent ]
     })
     .compileComponents();

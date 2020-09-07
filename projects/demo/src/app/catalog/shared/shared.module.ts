@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ProductGridComponent } from './product-grid/product-grid.component';
 import { ProductTileComponent } from './product-tile/product-tile.component';
 import { RouterModule } from '@angular/router';
-import { PageSizeComponent } from './page-size/page-size.component';
-import { SortingComponent } from './sorting/sorting.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { FacetsComponent } from './facets/facets.component';
 import { DirectivesModule } from '../../directives/directives.module';
@@ -16,8 +14,6 @@ import { DirectivesModule } from '../../directives/directives.module';
   declarations: [
     ProductGridComponent,
     ProductTileComponent,
-    PageSizeComponent,
-    SortingComponent,
     PaginationComponent,
     FacetsComponent
   ],
@@ -29,8 +25,6 @@ import { DirectivesModule } from '../../directives/directives.module';
   exports: [
     ProductGridComponent,
     ProductTileComponent,
-    PageSizeComponent,
-    SortingComponent,
     PaginationComponent,
     FacetsComponent
   ]

@@ -43,7 +43,7 @@ export class PaginationComponent implements OnInit {
   /**
    * Handler for navigating to a new page
    */
-  public goToPage(page: number) {
+  public goToPage(page: number): void {
     this.service.pageNumber = page;
   }
 

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProductTileComponent } from './product-tile.component';
+import { MocksModule } from '../../../mocks/mocks.module';
 
 describe('ProductTileComponent', () => {
   let component: ProductTileComponent;
@@ -8,6 +9,7 @@ describe('ProductTileComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ MocksModule ],
       declarations: [ ProductTileComponent ]
     })
     .compileComponents();

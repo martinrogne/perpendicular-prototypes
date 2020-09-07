@@ -36,7 +36,7 @@ export class SearchBarComponent implements OnInit {
   /**
    * Handler for when the user has entered a new catalog term
    */
-  public performSearch() {
+  public performSearch(): void {
     this.service.newSearchForSearchTerm(this.searchForm.value.searchTerm);
     this.searchForm.reset();
   }

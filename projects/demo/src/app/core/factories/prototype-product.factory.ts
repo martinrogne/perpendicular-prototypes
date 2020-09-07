@@ -13,7 +13,7 @@ export class PrototypeProductFactory extends WCSProductFactory {
   /**
    * Composes a new search result instance
    */
-  protected composeSearchResultInstance(json: any, query: ProductSearchQuery): ProductSearchResult {
+  protected composeSearchResultInstance(json: JSON, query: ProductSearchQuery): ProductSearchResult {
     const result = super.composeSearchResultInstance(json, query);
 
     result.totalPages = Math.ceil(result.totalCount / query.pageSize);

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProductPageComponent } from './product-page.component';
+import { MocksModule } from '../../mocks/mocks.module';
 
 describe('ProductPageComponent', () => {
   let component: ProductPageComponent;
@@ -8,6 +9,9 @@ describe('ProductPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        MocksModule
+      ],
       declarations: [ ProductPageComponent ]
     })
     .compileComponents();

@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.8",
+    "@angular-devkit/build-ng-packagr": "~0.1000.8",
     "@angular/cli": "~10.0.8",
     "@angular/compiler-cli": "~10.0.14",
     "@perpendicular/test": "^10.0.1",
@@ -52,6 +53,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^10.0.0",
     "poeditor-connector": "^1.0.2",
     "protractor": "~7.0.0",
     "puppeteer": "^5.2.1",

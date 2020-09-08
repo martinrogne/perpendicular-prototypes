@@ -133,6 +133,46 @@
           }
         }
       }
+    },
+    "perpendicular-next": {
+      "projectType": "library",
+      "root": "projects/perpendicular-next",
+      "sourceRoot": "projects/perpendicular-next/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/perpendicular-next/tsconfig.lib.json",
+            "project": "projects/perpendicular-next/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/perpendicular-next/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/perpendicular-next/src/test.ts",
+            "tsConfig": "projects/perpendicular-next/tsconfig.spec.json",
+            "karmaConfig": "projects/perpendicular-next/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/perpendicular-next/tsconfig.lib.json",
+              "projects/perpendicular-next/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "cli": {
     "analytics": false

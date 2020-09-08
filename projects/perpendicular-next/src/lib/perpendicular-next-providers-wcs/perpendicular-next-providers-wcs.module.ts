@@ -1,0 +1,198 @@
+import { NgModule } from '@angular/core';
+import {
+  IAddressFactory,
+  IAttachmentFactory,
+  ICartFactory,
+  ICartProvider,
+  ICategoryFactory,
+  ICategorySearchProvider, ICountryProvider,
+  IDynamicKitConfigurationFactory, IDynamicKitConfigurationProvider,
+  IESpotFactory, IESpotProvider, IIdentityCacheProvider,
+  IIdentityFactory, IIdentityProvider,
+  IInventoryFactory, IInventoryProvider,
+  ILandingPageFactory, ILandingPageProvider,
+  ILayoutFactory, ILayoutProvider, IMarketingEventProvider,
+  INewsletterProfileFactory, INewsletterProfileProvider,
+  IOrderFactory,
+  IOrderHistoryFactory, IOrderHistoryProvider, IOrderProvider,
+  IOrganizationFactory, IOrganizationProvider,
+  IPageFactory, IPageProvider,
+  IPaymentCallbackFactoryFactory,
+  IPaymentInstructionFactory, IPaymentInstructionProvider,
+  IPaymentMethodFactory,
+  IPriceFactory, IPriceProvider,
+  IProductFactory, IProductSearchProvider,
+  IProfileFactory, IProfileProvider,
+  IPromotionFactory, IPromotionProvider,
+  IRequisitionListFactory, IRequisitionListProvider,
+  IRoleFactory,
+  ISEOPageInfoFactory, ISEOPageInfoProvider, ISEOProvider,
+  ISEOTokenFactory,
+  IShippingModeFactory,
+  IStoreLocationFactory, IStoreLocationProvider,
+  ITypeAheadFactory, ITypeAheadProvider,
+  IUIExperimentFactory, IUIExperimentProvider,
+  IUserAccountFactory, IUserAccountProvider
+} from '@perpendicular/core';
+import {
+  AbstractDriver,
+  AUTH_COOKIE_NAME,
+  AUTH_COOKIE_SESSION_ONLY,
+  BaseWCSDriver, CookieBasedIdentityCacheProvider,
+  GUEST_LOGIN_MARKETING_CONSENT,
+  MARKETING_CONSENT_COOKIE_PREFIX,
+  PRIVACY_POLICY_COOKIE_PREFIX,
+  ProvidersWCSConfig,
+  WCSAddressFactory,
+  WCSAttachmentFactory,
+  WCSCartFactory,
+  WCSCartProvider,
+  WCSCategoryFactory,
+  WCSCategorySearchProvider, WCSCountryProvider,
+  WCSDriver,
+  WCSDynamicKitConfigurationFactory,
+  WCSDynamicKitConfigurationProvider,
+  WCSESpotFactory,
+  WCSESpotProvider,
+  WCSIdentityFactory,
+  WCSIdentityProvider,
+  WCSInventoryFactory,
+  WCSInventoryProvider,
+  WCSLandingPageFactory, WCSLandingPageProvider,
+  WCSLayoutFactory,
+  WCSLayoutProvider, WCSMarketingEventProvider,
+  WCSNewsletterProfileFactory, WCSNewsletterProfileProvider,
+  WCSOrderFactory,
+  WCSOrderHistoryFactory,
+  WCSOrderHistoryProvider,
+  WCSOrderProvider,
+  WCSOrganizationFactory,
+  WCSOrganizationProvider,
+  WCSPageFactory,
+  WCSPageProvider,
+  WCSPaymentCallbackFactoryFactory,
+  WCSPaymentInstructionFactory,
+  WCSPaymentInstructionProvider,
+  WCSPaymentMethodFactory,
+  WCSPriceFactory, WCSPriceProvider,
+  WCSProductFactory,
+  WCSProductSearchProvider,
+  WCSProfileFactory, WCSProfileProvider,
+  WCSPromotionFactory, WCSPromotionProvider,
+  WCSRequisitionListFactory,
+  WCSRequisitionListProvider,
+  WCSRoleFactory,
+  WCSSEOPageInfoFactory,
+  WCSSEOPageInfoProvider, WCSSEOProvider,
+  WCSSEOTokenFactory,
+  WCSShippingModeFactory,
+  WCSStoreLocationFactory,
+  WCSStoreLocationProvider,
+  WCSTypeAheadFactory,
+  WCSTypeAheadProvider,
+  WCSUIExperimentFactory,
+  WCSUIExperimentProvider,
+  WCSUserAccountFactory,
+  WCSUserAccountProvider
+} from '@perpendicular/providers-wcs';
+
+
+/**
+ * Module that defines all factories for this backend provider.
+ */
+@NgModule({
+  providers: [
+    // Core requirements
+    { provide: IProductFactory, useClass: WCSProductFactory },
+    { provide: IShippingModeFactory, useClass: WCSShippingModeFactory },
+    { provide: IPaymentMethodFactory, useClass: WCSPaymentMethodFactory },
+    { provide: IAddressFactory, useClass: WCSAddressFactory },
+    { provide: ICartFactory, useClass: WCSCartFactory },
+    { provide: IPaymentInstructionFactory, useClass: WCSPaymentInstructionFactory },
+    { provide: IESpotFactory, useClass: WCSESpotFactory },
+    { provide: IIdentityFactory, useClass: WCSIdentityFactory },
+    { provide: IAttachmentFactory, useClass: WCSAttachmentFactory },
+
+    // Required, but seems like they should be optional
+    { provide: IRoleFactory, useClass: WCSRoleFactory },
+    { provide: IOrganizationFactory, useClass: WCSOrganizationFactory },
+    { provide: IDynamicKitConfigurationFactory, useClass: WCSDynamicKitConfigurationFactory },
+    { provide: IStoreLocationFactory, useClass: WCSStoreLocationFactory },
+    { provide: IProfileFactory, useClass: WCSProfileFactory },
+    { provide: IPaymentCallbackFactoryFactory, useClass: WCSPaymentCallbackFactoryFactory },
+    { provide: IOrderFactory, useClass: WCSOrderFactory },
+    { provide: IOrderHistoryFactory, useClass: WCSOrderHistoryFactory },
+    { provide: ICategoryFactory, useClass: WCSCategoryFactory },
+
+    // Removed as non-essential
+    // REMOVED: optimize // { provide: ILayoutFactory, useClass: WCSLayoutFactory },
+    // REMOVED: optimize // { provide: IPromotionFactory, useClass: WCSPromotionFactory },
+    // REMOVED: optimize // { provide: IPageFactory, useClass: WCSPageFactory },
+    // REMOVED: optimize // { provide: ITypeAheadFactory, useClass: WCSTypeAheadFactory },
+    // REMOVED: optimize // { provide: INewsletterProfileFactory, useClass: WCSNewsletterProfileFactory },
+    // REMOVED: optimize // { provide: IInventoryFactory, useClass: WCSInventoryFactory },
+    // REMOVED: optimize // { provide: IUserAccountFactory, useClass: WCSUserAccountFactory },
+    // REMOVED: optimize // { provide: ILandingPageFactory, useClass: WCSLandingPageFactory },
+    // REMOVED: optimize // { provide: IRequisitionListFactory, useClass: WCSRequisitionListFactory },
+    // REMOVED: optimize // { provide: IPriceFactory, useClass: WCSPriceFactory },
+    // REMOVED: optimize // { provide: ISEOTokenFactory, useClass: WCSSEOTokenFactory },
+    // REMOVED: optimize // { provide: IUIExperimentFactory, useClass: WCSUIExperimentFactory },
+    // REMOVED: optimize // { provide: ISEOPageInfoFactory, useClass: WCSSEOPageInfoFactory },
+  ],
+})
+export class PerpendicularNextFactoriesWCSModule {}
+
+/**
+ * Main module to set up all default bindings.
+ */
+@NgModule({
+  imports: [PerpendicularNextFactoriesWCSModule],
+  providers: [
+    // Base configuration
+    { provide: GUEST_LOGIN_MARKETING_CONSENT, useValue: false },
+    { provide: AUTH_COOKIE_SESSION_ONLY, useValue: true },
+    { provide: AUTH_COOKIE_NAME, useValue: 'WCAuth' },
+    { provide: MARKETING_CONSENT_COOKIE_PREFIX, useValue: 'WCMarketingConsent' },
+    { provide: PRIVACY_POLICY_COOKIE_PREFIX, useValue: 'WCPrivacyPolicyVersion' },
+
+    // Core requirements
+    { provide: AbstractDriver, useClass: WCSDriver },
+    { provide: BaseWCSDriver, useClass: BaseWCSDriver },
+    { provide: ProvidersWCSConfig, useClass: ProvidersWCSConfig },
+
+    { provide: ICartProvider, useClass: WCSCartProvider },
+    { provide: IESpotProvider, useClass: WCSESpotProvider },
+    { provide: IIdentityProvider, useClass: WCSIdentityProvider },
+    { provide: IProductSearchProvider, useClass: WCSProductSearchProvider },
+    { provide: IIdentityCacheProvider, useClass: CookieBasedIdentityCacheProvider },
+
+    // Required, but seems like they should be optional
+    { provide: IStoreLocationProvider, useClass: WCSStoreLocationProvider },
+    { provide: IProfileProvider, useClass: WCSProfileProvider },
+    { provide: IPaymentInstructionProvider, useClass: WCSPaymentInstructionProvider },
+    { provide: IOrderProvider, useClass: WCSOrderProvider },
+    { provide: IOrderHistoryProvider, useClass: WCSOrderHistoryProvider },
+    { provide: ICategorySearchProvider, useClass: WCSCategorySearchProvider },
+
+    // Removed as non-essential
+    // REMOVED: optimize // { provide: ICountryProvider, useClass: WCSCountryProvider },
+    // REMOVED: optimize // { provide: IInventoryProvider, useClass: WCSInventoryProvider },
+    // REMOVED: optimize // { provide: ILayoutProvider, useClass: WCSLayoutProvider },
+    // REMOVED: optimize // { provide: IMarketingEventProvider, useClass: WCSMarketingEventProvider },
+    // REMOVED: optimize // { provide: IPriceProvider, useClass: WCSPriceProvider },
+    // REMOVED: optimize // { provide: IPromotionProvider, useClass: WCSPromotionProvider },
+    // REMOVED: optimize // { provide: ISEOProvider, useClass: WCSSEOProvider },
+    // REMOVED: optimize // { provide: IPageProvider, useClass: WCSPageProvider },
+    // REMOVED: optimize // { provide: ITypeAheadProvider, useClass: WCSTypeAheadProvider, multi: true },
+    // REMOVED: optimize // { provide: INewsletterProfileProvider, useClass: WCSNewsletterProfileProvider },
+    // REMOVED: optimize // { provide: IDynamicKitConfigurationProvider, useClass: WCSDynamicKitConfigurationProvider },
+    // REMOVED: optimize // { provide: IRequisitionListProvider, useClass: WCSRequisitionListProvider },
+    // REMOVED: optimize // { provide: IOrganizationProvider, useClass: WCSOrganizationProvider },
+    // REMOVED: optimize // { provide: IUserAccountProvider, useClass: WCSUserAccountProvider },
+    // REMOVED: optimize // { provide: ILandingPageProvider, useClass: WCSLandingPageProvider },
+    // REMOVED: optimize // { provide: IUIExperimentProvider, useClass: WCSUIExperimentProvider },
+    // REMOVED: optimize // { provide: ISEOPageInfoProvider, useClass: WCSSEOPageInfoProvider },
+  ],
+})
+export class PerpendicularNextProvidersWCSModule {}
+

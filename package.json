@@ -29,6 +29,8 @@
     "@perpendicular/providers-wcs": "^10.0.1",
     "@perpendicular/services-base": "^10.0.1",
     "@perpendicular/services-wcs": "^10.0.1",
+    "@sentry/angular": "^5.22.3",
+    "@sentry/tracing": "^5.22.3",
     "angulartics2": "^9.0.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",

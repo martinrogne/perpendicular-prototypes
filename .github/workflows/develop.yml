@@ -36,6 +36,7 @@ jobs:
         config-file-path: .github/tools/changelog-config.js
         github-token: ${{ secrets.ADMIN_TOKEN_GITHUB }}
         output-file: "false"
+        skip-on-empty: "false"
 
     - name: Translate
       run:

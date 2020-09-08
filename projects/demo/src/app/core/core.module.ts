@@ -25,6 +25,7 @@ import { PrototypeProductFactory } from './factories/prototype-product.factory';
 import { Angulartics2Module } from 'angulartics2';
 import { PrototypeCookieService } from './services/prototype-cookie-service';
 import * as Sentry from '@sentry/angular';
+import { EnhancedAngulartics2GoogleTagManagerAnalyticsModule } from '@perpendicular/analytics';
 
 
 /**
@@ -53,6 +54,9 @@ import * as Sentry from '@sentry/angular';
 
     // External core module dependencies
     Angulartics2Module.forRoot(),
+
+    // GA tracking through GTM
+    EnhancedAngulartics2GoogleTagManagerAnalyticsModule
   ],
   exports: [
     HeaderComponent,

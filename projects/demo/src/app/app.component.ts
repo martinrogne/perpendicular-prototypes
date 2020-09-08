@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
 /**
  * Root level component
@@ -13,7 +12,7 @@ export class AppComponent {
   /**
    * Default constructor
    */
-  constructor(public angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
+  constructor() {
 
   }
 }

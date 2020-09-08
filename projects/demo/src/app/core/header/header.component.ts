@@ -20,7 +20,6 @@ export class HeaderComponent implements OnInit {
    * Angular lifecycle hook
    */
   ngOnInit(): void {
-    console.log('Version: ', environment.appVersion);
   }
 
 }

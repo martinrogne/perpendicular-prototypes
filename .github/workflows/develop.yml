@@ -37,7 +37,6 @@ jobs:
         github-token: ${{ secrets.ADMIN_TOKEN_GITHUB }}
         output-file: "false"
         skip-on-empty: "false"
-        pre-commit: .github/tools/changelog-precommit.js
 
     - name: Translate
       run:
@@ -81,3 +80,4 @@ jobs:
       with:
         environment: production
         version: ${{ steps.changelog.outputs.tag }}
+        sourcemaps: './dist/demo'

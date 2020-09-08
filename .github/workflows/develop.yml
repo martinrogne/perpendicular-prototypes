@@ -48,13 +48,11 @@ jobs:
         POEDITOR_API_KEY: ${{ secrets.POEDITOR_API_KEY }}
 
     - name: Build
-      if: ${{ steps.changelog.outputs.skipped == 'false' }}
       run:
         npm run ci:build
 
     - name: Publish
       uses: netlify/actions/cli@master
-      if: ${{ steps.changelog.outputs.skipped == 'false' }}
       with:
         args: deploy --prod --dir=dist/demo
       env:
@@ -63,7 +61,6 @@ jobs:
 
     - name: Create Github Release
       uses: actions/create-release@v1
-      if: ${{ steps.changelog.outputs.skipped == 'false' }}
       env:
         GITHUB_TOKEN: ${{ secrets.ADMIN_TOKEN_GITHUB }}
       with:
@@ -74,7 +71,6 @@ jobs:
 
     - name: Create Sentry Release
       uses: getsentry/action-release@v1
-      if: ${{ steps.changelog.outputs.skipped == 'false' }}
       env:
         SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
         SENTRY_ORG: ${{ secrets.SENTRY_ORG }}

@@ -80,4 +80,4 @@ jobs:
       with:
         environment: production
         version: ${{ steps.changelog.outputs.tag }}
-        SENTRY_LOG_LEVEL: debug
+        skipSetCommits: true

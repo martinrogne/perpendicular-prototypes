@@ -3,7 +3,7 @@ import { version } from 'package.json';
 
 export const environment = {
   production: true,
-  appVersion: version,
+  appVersion: 'v' + version,
 
   config: {
     sasStoreId: 10101,

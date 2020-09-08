@@ -80,4 +80,3 @@ jobs:
       with:
         environment: production
         version: ${{ steps.changelog.outputs.tag }}
-        skipSetCommits: true

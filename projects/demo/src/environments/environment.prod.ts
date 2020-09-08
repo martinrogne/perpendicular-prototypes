@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  version: 'prod',
 
   config: {
     sasStoreId: 10101,

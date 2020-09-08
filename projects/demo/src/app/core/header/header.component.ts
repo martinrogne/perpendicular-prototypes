@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
 /**
  * Component for rendering the persistent header of the site
@@ -19,6 +20,7 @@ export class HeaderComponent implements OnInit {
    * Angular lifecycle hook
    */
   ngOnInit(): void {
+    console.log('Version: ', environment.version);
   }
 
 }

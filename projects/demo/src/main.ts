@@ -12,6 +12,7 @@ if (environment.production) {
 
   Sentry.init({
     dsn: 'https://76a3bfbe958a45309cbf6cc838ad5925@o444826.ingest.sentry.io/5420304',
+    release: environment.version,
     integrations: [
       new Integrations.BrowserTracing({
         tracingOrigins: ['https://perpendicular-storefront-prototype.netlify.app'],

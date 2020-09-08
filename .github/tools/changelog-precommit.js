@@ -3,9 +3,6 @@ exports.preCommit = (props) => {
 
   console.log('Precommit props: ', props);
 
-  const environment = require('../../projects/demo/src/environments/environment.prod.ts');
-  environment.environment.version = '0.0.0';
-
   const fs = require('fs');
   const fileName = '../../projects/demo/src/environments/environment.generated.ts';
 

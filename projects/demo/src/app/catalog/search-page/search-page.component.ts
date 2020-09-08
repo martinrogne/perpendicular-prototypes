@@ -1,7 +1,5 @@
 import { Component, Injector, OnInit } from '@angular/core';
-import {IProductFactory, IProductSearchService, Product, ProductSearchResult} from '@perpendicular/core';
-import { RouteDataBind } from '../../core/decorators/route-data-bind-decorator';
-import { ActivatedRoute } from '@angular/router';
+import { IProductFactory, IProductSearchService, ProductSearchResult } from '@perpendicular/core';
 import { ServiceStateBind } from '../../core/decorators/service-state-bind-decorator';
 
 /**
@@ -31,5 +29,4 @@ export class SearchPageComponent implements OnInit {
    */
   public ngOnInit(): void {
   }
-
 }

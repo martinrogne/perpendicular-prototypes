@@ -4,7 +4,7 @@ exports.preCommit = (props) => {
   console.log('Precommit props: ', props);
 
   const fs = require('fs');
-  const fileName = '../../projects/demo/src/environments/environment.generated.ts';
+  const fileName = './environment.generated.ts';
 
   fs.writeFile(fileName, 'foo', function write(err) {
     if (err) return console.log(err);

@@ -1,14 +1,14 @@
 import { APP_INITIALIZER, ErrorHandler, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
-  ICookieService,
+  ICookieService, IIdentityCacheProvider,
   IProductFactory,
   IProductSearchService,
   PerpendicularCoreModule,
   PRODUCTSEARCH_DEFAULT_PAGESIZE,
   PRODUCTSEARCH_SEARCHTYPE
 } from '@perpendicular/core';
-import { ProvidersWCSModule } from '@perpendicular/providers-wcs';
+import { IdentityCacheProvider, ProvidersWCSModule } from '@perpendicular/providers-wcs';
 import { ServicesWCSModule } from '@perpendicular/services-wcs';
 import { APP_CONFIG_BINDINGS } from './config';
 import { BrowserModule } from '@angular/platform-browser';
@@ -67,6 +67,7 @@ import { EnhancedAngulartics2GoogleTagManagerAnalyticsModule } from '@perpendicu
     ...APP_CONFIG_BINDINGS,
     { provide: PRODUCTSEARCH_DEFAULT_PAGESIZE, useValue: 24 },
     { provide: PRODUCTSEARCH_SEARCHTYPE, useValue: '100'},
+    { provide: IIdentityCacheProvider, useClass: IdentityCacheProvider },
 
     // Resolvers
     { provide: ProductResolver, useClass: ProductResolver },

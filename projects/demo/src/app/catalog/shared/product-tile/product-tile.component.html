@@ -1,4 +1,4 @@
-<div *ngIf="product">
+<div *ngIf="product" (click)="tileClick()">
   <a [routerLink]="['/', 'catalog', 'product', product.seotoken ]">
     <div class="image-container">
       <img [src]="product.thumbnailImage" alt="Product image" width="200" height="310" />

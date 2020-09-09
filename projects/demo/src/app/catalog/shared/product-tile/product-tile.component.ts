@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import {IInventoryRegistry, IProductFactory, Product} from '@perpendicular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { IAnalyticsService, IProductFactory, Product } from '@perpendicular/core';
+
 /**
  * Simple component for rendering a product as a tile
  */
@@ -7,6 +8,7 @@ import {IInventoryRegistry, IProductFactory, Product} from '@perpendicular/core'
   selector: 'app-product-tile',
   templateUrl: './product-tile.component.html',
   styleUrls: ['./product-tile.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductTileComponent implements OnInit {
   /**

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { environment } from '../../../environments/environment';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 /**
  * Component for rendering the persistent header of the site
@@ -7,7 +6,8 @@ import { environment } from '../../../environments/environment';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent implements OnInit {
 

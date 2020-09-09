@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
-import { IProductRegistry, ISEORegistry, Product } from '@perpendicular/core';
+import { IAnalyticsService, IProductRegistry, ISEORegistry, Product } from '@perpendicular/core';
 
 /**
  * Resolver for mapping a product SEO token on the URL to a valid product
@@ -11,7 +11,9 @@ export class ProductResolver implements Resolve<Product> {
   /**
    * Default constructor
    */
-  constructor(private seoRegistry: ISEORegistry, private productRegistry: IProductRegistry) {}
+  constructor(private seoRegistry: ISEORegistry,
+              private productRegistry: IProductRegistry,
+              private analyticsService: IAnalyticsService) {}
 
   /**
    * Main resolver implementation
@@ -19,7 +21,13 @@ export class ProductResolver implements Resolve<Product> {
   public resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<Product> {
     return this.seoRegistry.getSEOToken(route.params.token).then(x => {
       const productId = String(x.tokenValue);
-      return this.productRegistry.getProduct(productId);
+      const promise = this.productRegistry.getProduct(productId);
+
+      promise.then(p => {
+        this.analyticsService.trackProductDetailsView(p);
+      });
+
+      return promise;
     });
   }
 }

@@ -1,5 +1,5 @@
 import { Component, Injector, OnInit } from '@angular/core';
-import { IProductFactory, IProductSearchService, ProductSearchResult } from '@perpendicular/core';
+import { IProductSearchService, ProductSearchResult } from '@perpendicular/core';
 import { ServiceStateBind } from '../../core/decorators/service-state-bind-decorator';
 
 /**
@@ -8,7 +8,7 @@ import { ServiceStateBind } from '../../core/decorators/service-state-bind-decor
 @Component({
   selector: 'app-search-page',
   templateUrl: './search-page.component.html',
-  styleUrls: ['./search-page.component.scss']
+  styleUrls: ['./search-page.component.scss'],
 })
 export class SearchPageComponent implements OnInit {
   /**
@@ -20,7 +20,6 @@ export class SearchPageComponent implements OnInit {
    * Default constructor
    */
   constructor(public service: IProductSearchService,
-              public factory: IProductFactory,
               public injector: Injector) {
   }
 

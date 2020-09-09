@@ -1,10 +1,11 @@
-import { AfterViewInit, Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { Product } from '@perpendicular/core';
 
 @Component({
   selector: 'app-product-grid',
   templateUrl: './product-grid.component.html',
   styleUrls: ['./product-grid.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductGridComponent implements OnInit {
   /**

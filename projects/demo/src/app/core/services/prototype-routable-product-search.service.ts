@@ -1,6 +1,13 @@
 import { ProductSearchService } from '@perpendicular/services-base';
 import { Injectable } from '@angular/core';
-import { IIdentityService, IProductFactory, IProductSearchProvider, Product, ProductSearchQuery } from '@perpendicular/core';
+import {
+  IAnalyticsService,
+  IIdentityService,
+  IProductFactory,
+  IProductSearchProvider,
+  Product,
+  ProductSearchQuery
+} from '@perpendicular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { debounceTime, filter, mergeMap } from 'rxjs/operators';
 import { from } from 'rxjs';

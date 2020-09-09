@@ -11,7 +11,7 @@ import { OnInputChange } from '../core/decorators/on-input-change-decorator';
 })
 export class AddToCartDirective {
   /**
-   * The marketing spot ID
+   * The product that may be added to cart
    */
   @OnInputChange() @Input() product: Product;
 
@@ -37,6 +37,9 @@ export class AddToCartDirective {
     this.service.addToCart(this.product.productId, 1);
   }
 
+  /**
+   * Handler for when the product input changes
+   */
   public productChanged(product: Product): void {
     if (product.type === 'ItemBean') {
       this.disabled = false;

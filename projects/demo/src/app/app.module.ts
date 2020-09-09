@@ -12,7 +12,7 @@ import { Angulartics2 } from 'angulartics2';
  */
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

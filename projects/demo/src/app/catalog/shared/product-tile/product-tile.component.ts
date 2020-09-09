@@ -19,8 +19,7 @@ export class ProductTileComponent implements OnInit {
   /**
    * Default constructor
    */
-  constructor(public factory: IProductFactory,
-              public analyticsService: IAnalyticsService) {
+  constructor(public factory: IProductFactory) {
     this.product = this.factory.newInstance();
   }
 
@@ -28,14 +27,5 @@ export class ProductTileComponent implements OnInit {
    * Angular lifecycle hook
    */
   ngOnInit(): void {
-  }
-
-  /**
-   * Utility function to inform the analytics service
-   * when an interaction occured
-   */
-  public tileClick(): void {
-    // FIXME: list and position should be dynamic here
-    this.analyticsService.trackProductClick(this.product, 'search', 0);
   }
 }

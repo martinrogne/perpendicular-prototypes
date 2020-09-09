@@ -49,8 +49,7 @@ export class PrototypeRoutableProductSearchService extends ProductSearchService 
               public provider: IProductSearchProvider,
               public factory: IProductFactory,
               public router: Router,
-              public route: ActivatedRoute,
-              public analyticsService: IAnalyticsService) {
+              public route: ActivatedRoute) {
     super(identityService, provider, factory, );
 
     this.lastProductSet = [];
@@ -90,17 +89,11 @@ export class PrototypeRoutableProductSearchService extends ProductSearchService 
           this.lastProductSet = this.lastProductSet.fill(undefined, 0);
         }
 
-        const positions = new Map<string, number>();
-
         for (let i = 0; i < x.result.length; i++) {
           const k = (x.pageNumber - 1) * x.query.pageSize + i;
 
           this.lastProductSet[k] = x.result[i];
-
-          positions.set(x.result[i].productId, k);
         }
-
-        this.analyticsService.trackProductImpressions(x.result, 'search', positions);
 
         x.result.splice(0, x.result.length);
 

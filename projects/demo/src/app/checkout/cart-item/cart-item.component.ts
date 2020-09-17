@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {CartItem, ICartFactory} from '@perpendicular/core';
-import {WCSCart, WCSCartFactory, WCSCartItem} from '@perpendicular/providers-wcs';
+import { CartItem } from 'perpendicular-core';
 
 /**
  * Component for displaying a single item from the cart
@@ -14,14 +13,13 @@ export class CartItemComponent implements OnInit {
   /**
    * The item to render
    */
-  @Input() item: CartItem;
+  @Input() item: CartItem | undefined;
 
 
   /**
    * Default constructor
    */
-  constructor(public factory: ICartFactory) {
-    this.item = (this.factory as WCSCartFactory).newItemInstance();
+  constructor() {
   }
 
   /**

@@ -1,5 +1,5 @@
 import { Directive, Input } from '@angular/core';
-import { IAnalyticsService, Product } from '@perpendicular/core';
+import { IAnalyticsService, Product } from 'perpendicular-core';
 import { OnInputChange } from '../core/decorators/on-input-change-decorator';
 
 /**
@@ -33,7 +33,7 @@ export class AnalyticsProductImpressionDirective {
    * Handler for when the product input changes
    */
   public productChanged(product: Product): void {
-    if (this.product && this.list && this.index !== undefined) {
+    if (this.product && product.productId && this.list && this.index !== undefined) {
       const index = new Map<string, number>();
       index.set(product.productId, this.index);
 

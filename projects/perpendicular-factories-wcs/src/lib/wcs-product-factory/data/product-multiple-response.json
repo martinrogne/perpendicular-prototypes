@@ -1,0 +1,287 @@
+{
+  "recordSetTotal": 3,
+  "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byIds?id=10114&id=10115&id=10116",
+  "recordSetCount": 3,
+  "catalogEntryView": [
+    {
+      "hasSingleSKU": false,
+      "seotoken": "luigi-valenti-strapless-cocktail-dress-aurorawmdrs-075",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10114",
+      "fullImage": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/646x1000\/wcl000_0006_a_purple.jpg",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10114",
+      "price": [
+        {
+          "description": "L",
+          "value": "250.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0006_a_purple.jpg",
+      "parentCatalogEntryID": "10006",
+      "shortDescription": "Strapless cocktail dress with appliqued roses and tassels at the hem",
+      "manufacturer": "Luigi Valenti",
+      "name": "Luigi Valenti Strapless Cocktail Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "longDescription": "Strapless red cocktail dress with empire waist enhances your figure. The appliqued roses and tassels at the hem gives character to the dress while the red silk bow adds to the style.",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xl_enabled.png",
+              "sequence": "5.00000",
+              "value": "XL",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xl_enabled.png",
+              "uniqueID": "7000000000000000005",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "XL"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_purple.png",
+              "sequence": "7.00000",
+              "value": "Purple",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_purple.png",
+              "uniqueID": "7000000000000000013",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Purple"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-075"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "luigi-valenti-strapless-cocktail-dress-aurorawmdrs-076",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10115",
+      "fullImage": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/646x1000\/wcl000_0006_a_red.jpg",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10115",
+      "price": [
+        {
+          "description": "L",
+          "value": "250.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0006_a_red.jpg",
+      "parentCatalogEntryID": "10006",
+      "shortDescription": "Strapless cocktail dress with appliqued roses and tassels at the hem",
+      "manufacturer": "Luigi Valenti",
+      "name": "Luigi Valenti Strapless Cocktail Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "longDescription": "Strapless red cocktail dress with empire waist enhances your figure. The appliqued roses and tassels at the hem gives character to the dress while the red silk bow adds to the style.",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xs_enabled.png",
+              "sequence": "1.00000",
+              "value": "XS",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xs_enabled.png",
+              "uniqueID": "7000000000000000004",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "XS"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_red.png",
+              "sequence": "1.00000",
+              "value": "Red",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_red.png",
+              "uniqueID": "7000000000000000007",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Red"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-076"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "luigi-valenti-strapless-cocktail-dress-aurorawmdrs-077",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10116",
+      "fullImage": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/646x1000\/wcl000_0006_a_red.jpg",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10116",
+      "price": [
+        {
+          "description": "L",
+          "value": "250.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0006_a_red.jpg",
+      "parentCatalogEntryID": "10006",
+      "shortDescription": "Strapless cocktail dress with appliqued roses and tassels at the hem",
+      "manufacturer": "Luigi Valenti",
+      "name": "Luigi Valenti Strapless Cocktail Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "longDescription": "Strapless red cocktail dress with empire waist enhances your figure. The appliqued roses and tassels at the hem gives character to the dress while the red silk bow adds to the style.",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_s_enabled.png",
+              "sequence": "2.00000",
+              "value": "S",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_s_enabled.png",
+              "uniqueID": "7000000000000000001",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "S"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_red.png",
+              "sequence": "1.00000",
+              "value": "Red",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_red.png",
+              "uniqueID": "7000000000000000007",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Red"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-077"
+    }
+  ],
+  "recordSetComplete": "true",
+  "recordSetStartNumber": 0,
+  "recordSetTotalMatches": 3,
+  "metaData": {
+    "price": "1"
+  },
+  "resourceName": "productview"
+}

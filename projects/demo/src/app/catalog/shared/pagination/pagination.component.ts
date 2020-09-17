@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IProductSearchService } from '@perpendicular/core';
+import { IProductSearchService } from 'perpendicular-core';
 
 /**
  * Component for navigating back and forwards through pages

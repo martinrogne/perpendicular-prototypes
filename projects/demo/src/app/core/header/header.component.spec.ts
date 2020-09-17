@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
-import { PerpendicularTestingModule } from '@perpendicular/test';
+// import { PerpendicularTestingModule } from '@perpendicular/test';
 import { MocksModule } from '../../mocks/mocks.module';
 
 describe('HeaderComponent', () => {

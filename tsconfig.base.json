@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -19,7 +18,33 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "perpendicular-services-base": [
+        "dist/perpendicular-services-base/perpendicular-services-base",
+        "dist/perpendicular-services-base"
+      ],
+      "perpendicular-providers-wcs": [
+        "dist/perpendicular-providers-wcs/perpendicular-providers-wcs",
+        "dist/perpendicular-providers-wcs"
+      ],
+      "perpendicular-core": [
+        "dist/perpendicular-core/perpendicular-core",
+        "dist/perpendicular-core"
+      ],
+      "perpendicular-factories-wcs": [
+        "dist/perpendicular-factories-wcs/perpendicular-factories-wcs",
+        "dist/perpendicular-factories-wcs"
+      ],
+      "perpendicular-models-wcs": [
+        "dist/perpendicular-models-wcs/perpendicular-models-wcs",
+        "dist/perpendicular-models-wcs"
+      ],
+      "perpendicular-analytics": [
+        "dist/perpendicular-analytics/perpendicular-analytics",
+        "dist/perpendicular-analytics"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,

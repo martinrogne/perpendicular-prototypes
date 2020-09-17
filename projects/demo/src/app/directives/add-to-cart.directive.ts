@@ -1,5 +1,5 @@
 import { Directive, HostBinding, HostListener, Input } from '@angular/core';
-import {ICartService, IProductFactory, Product} from '@perpendicular/core';
+import {ICartService, IProductFactory, Product} from 'perpendicular-core';
 import { OnInputChange } from '../core/decorators/on-input-change-decorator';
 
 /**
@@ -34,7 +34,9 @@ export class AddToCartDirective {
    * Handler for the click action on an element
    */
   @HostListener('click') onClick(): void {
-    this.service.addToCart(this.product.productId, 1);
+    if (this.product.productId) {
+      this.service.addToCart(this.product.productId, 1);
+    }
   }
 
   /**

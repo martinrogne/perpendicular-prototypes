@@ -1,0 +1,12 @@
+{
+  "name": "perpendicular-analytics",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^10.0.14",
+    "@angular/core": "^10.0.14",
+    "perpendicular-core": "0.0.1"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

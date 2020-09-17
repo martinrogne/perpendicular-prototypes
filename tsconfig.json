@@ -12,6 +12,42 @@
     },
     {
       "path": "./projects/demo/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/perpendicular-services-base/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/perpendicular-services-base/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/perpendicular-providers-wcs/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/perpendicular-providers-wcs/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/perpendicular-core/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/perpendicular-core/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/perpendicular-factories-wcs/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/perpendicular-factories-wcs/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/perpendicular-models-wcs/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/perpendicular-models-wcs/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/perpendicular-analytics/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/perpendicular-analytics/tsconfig.spec.json"
     }
 ]
 }

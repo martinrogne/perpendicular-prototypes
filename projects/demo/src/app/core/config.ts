@@ -1,4 +1,4 @@
-import { ProvidersWCSConfig, WCS_SERVER_NAME, SOLR_SERVER_NAME } from '@perpendicular/providers-wcs';
+import { ProvidersWCSConfig, WCS_SERVER_NAME, SOLR_SERVER_NAME } from 'perpendicular-core';
 import { environment } from '../../environments/environment';
 
 /**

@@ -15,7 +15,7 @@ if (environment.production) {
     release: environment.appVersion,
     integrations: [
       new Integrations.BrowserTracing({
-        tracingOrigins: ['https://perpendicular-storefront-prototype.netlify.app'],
+        tracingOrigins: ['https://perpendicular-storefront-prototype.netlify.app', '159.8.241.44'],
         routingInstrumentation: Sentry.routingInstrumentation,
       }),
     ],

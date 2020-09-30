@@ -19,7 +19,7 @@ export class WCSAuthenticationInterceptor implements HttpInterceptor {
     Observable<HttpEvent<any>> {
 
     if (!req.headers.has('Explicit-Authentication')) {
-      return this.injector.get(IIdentityService).state.pipe(
+      return this.injector.get<IIdentityService>(IIdentityService).state.pipe(
         first(),
         mergeMap(identity => {
 

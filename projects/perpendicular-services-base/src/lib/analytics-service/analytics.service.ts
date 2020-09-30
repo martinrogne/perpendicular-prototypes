@@ -18,9 +18,7 @@ import {
  * of populating the analytics properties with the relevant fields prior to raising
  * them to angulartics.
  */
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class AnalyticsService extends IAnalyticsService {
   /**
    * Default constructor

@@ -8,9 +8,7 @@ import {
 } from 'perpendicular-core';
 
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ProductSearchService extends IProductSearchService {
   /**
    * Default Constructor.
@@ -197,7 +195,7 @@ export class ProductSearchService extends IProductSearchService {
     if (this.query.categoryId || this.query.searchTerm) {
       super.executeQuery();
     } else {
-      this._state.next(this.factory.newResultInstance(0, 1, [], this.factory.newQueryInstance(this.query)));
+      this.internalState.next(this.factory.newResultInstance(0, 1, [], this.factory.newQueryInstance(this.query)));
     }
   }
 }

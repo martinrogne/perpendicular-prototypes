@@ -1,7 +1,6 @@
 import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FooterComponent } from './footer.component';
-import { MocksModule } from '../../mocks/mocks.module';
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
@@ -10,7 +9,6 @@ describe('FooterComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
-        MocksModule
       ],
       declarations: [ FooterComponent ]
     })

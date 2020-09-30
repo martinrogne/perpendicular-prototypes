@@ -10,9 +10,7 @@ import {
   PaymentInstruction, PaymentMethod, ShippingMode, StoreLocation
 } from 'perpendicular-core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CartService extends ICartService {
   constructor() {
     super();

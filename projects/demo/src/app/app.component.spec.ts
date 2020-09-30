@@ -1,24 +1,13 @@
-import { TestBed, waitForAsync } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { Spectator, createComponentFactory } from '@ngneat/spectator';
 import { AppComponent } from './app.component';
-import { MocksModule } from './mocks/mocks.module';
 
-describe('AppComponent', () => {
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        MocksModule
-      ],
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
-  }));
+describe('SearchBarComponent', () => {
+  let spectator: Spectator<AppComponent>;
+  const createComponent = createComponentFactory(AppComponent);
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+  beforeEach(() => spectator = createComponent());
+
+  it('should create', () => {
+    expect(spectator.component).toBeTruthy();
   });
 });

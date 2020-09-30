@@ -22,19 +22,17 @@ export class CheckoutPageComponent implements OnInit {
   /**
    * The cart to be rendered
    */
-  public cart: Cart;
+  public cart: Cart = new Cart();
 
 
   /**
    * Default constructor
    */
   constructor(public service: ICartService,
-              public factory: ICartFactory,
               public profileService: IProfileService,
               public addressFactory: IAddressFactory,
               public paymentInstructionFactory: IPaymentInstructionFactory,
               public analytics: IAnalyticsService) {
-    this.cart = this.factory.newInstance();
   }
 
   /**
@@ -52,15 +50,9 @@ export class CheckoutPageComponent implements OnInit {
    * Simple one-step checkout function to be able to perform a checkout - just to verify Google Analytics
    */
   public async doCheckout(): Promise<void> {
-    console.log('do checkout!');
-
     this.service.clearPaymentInstructions();
 
-    console.log('await c1...');
-
     const c1 = await this.service.state.pipe(filter(x => x.paymentInstructions.length === 0), first()).toPromise();
-
-    console.log('c1: ', c1);
 
     const address = this.addressFactory.newInstance();
     address.isBillingAddress = true;
@@ -79,23 +71,15 @@ export class CheckoutPageComponent implements OnInit {
     await this.service.setBillingAddress(profile.addressBook[0]);
     await this.service.setShippingAddress(profile.addressBook[0]);
 
-    console.log('await c2...');
-
     const c2 = await this.service.state.pipe(filter(x => x.paymentInstructions.length > 0), first()).toPromise();
-
-    console.log('c2: ', c2);
 
     const payLater = payment.find(x => x.paymentMethodName === 'PayLater');
     if (payLater) {
       this.service.setPaymentMethod(payLater);
 
-      console.log('await c3...');
-
       const c3 = await this.service.state.pipe(
         filter(x => x.paymentInstructions.length > 0 && x.paymentInstructions[0].paymentMethodName === 'PayLater'),
         first()).toPromise();
-
-      console.log('c3: ', c3);
 
       const order = await this.service.checkout();
 

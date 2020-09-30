@@ -99,7 +99,7 @@ export class RoutableProductSearchService extends ProductSearchService {
         // @ts-ignore
         x.result.push(... this.lastProductSet);
 
-        this._state.next(x);
+        this.internalState.next(x);
 
         this.lastQuery = this.factory.newQueryInstance(x.query);
       });
@@ -172,7 +172,7 @@ export class RoutableProductSearchService extends ProductSearchService {
         super.executeQuery();
       }
     } else {
-      this._state.next(this.factory.newResultInstance(0, 1, [], this.factory.newQueryInstance(this.query)));
+      this.internalState.next(this.factory.newResultInstance(0, 1, [], this.factory.newQueryInstance(this.query)));
     }
   }
 }

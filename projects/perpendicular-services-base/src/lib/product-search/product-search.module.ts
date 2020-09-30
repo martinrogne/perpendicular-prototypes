@@ -3,6 +3,9 @@ import { IProductSearchService } from 'perpendicular-core';
 import { ProductSearchService } from './product-search/product-search.service';
 import { RoutableProductSearchService } from './routable-product-search/routable-product-search.service';
 
+export { ProductSearchService } from './product-search/product-search.service';
+export { RoutableProductSearchService } from './routable-product-search/routable-product-search.service';
+
 /**
  * Product search feature module
  */
@@ -28,3 +31,4 @@ export class ProductSearchModule { }
   ]
 })
 export class RoutableProductSearchModule { }
+

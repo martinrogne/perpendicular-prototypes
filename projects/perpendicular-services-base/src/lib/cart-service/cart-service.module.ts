@@ -13,3 +13,5 @@ import { CartService } from './cart-service.service';
   ]
 })
 export class CartServiceModule { }
+
+export { CartService } from './cart-service.service';

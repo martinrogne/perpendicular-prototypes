@@ -11,3 +11,5 @@ import { WCSIdentityFactory } from './wcs-identity.factory';
   ]
 })
 export class WCSIdentityFactoryModule { }
+
+export { WCSIdentityFactory } from './wcs-identity.factory';

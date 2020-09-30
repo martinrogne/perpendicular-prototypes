@@ -11,3 +11,5 @@ import { AnalyticsService } from './analytics.service';
   ]
 })
 export class AnalyticsServiceModule { }
+
+export { AnalyticsService } from './analytics.service';

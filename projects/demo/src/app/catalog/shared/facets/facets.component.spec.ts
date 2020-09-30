@@ -1,27 +1,14 @@
-import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Spectator, createComponentFactory } from '@ngneat/spectator';
 
 import { FacetsComponent } from './facets.component';
-import { MocksModule } from '../../../mocks/mocks.module';
 
 describe('FacetsComponent', () => {
-  let component: FacetsComponent;
-  let fixture: ComponentFixture<FacetsComponent>;
+  let spectator: Spectator<FacetsComponent>;
+  const createComponent = createComponentFactory(FacetsComponent);
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      imports: [ MocksModule ],
-      declarations: [ FacetsComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(FacetsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  beforeEach(() => spectator = createComponent());
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(spectator.component).toBeTruthy();
   });
 });

@@ -10,7 +10,7 @@ import { first, mergeMap } from 'rxjs/operators';
  */
 Injectable({
   providedIn: 'root'
-})
+});
 export class WCSAuthenticationInterceptor implements HttpInterceptor {
   constructor(private injector: Injector) {
   }

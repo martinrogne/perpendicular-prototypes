@@ -19,10 +19,10 @@ export class IdentityService extends IIdentityService {
   protected fetchOrganizations = false;
 
   // current state
-  protected _identity: Identity;
+  protected internalIdentity: Identity;
 
   // event sink
-  protected _state: BehaviorSubject<Identity>;
+  protected internalState: BehaviorSubject<Identity>;
 
   /**
    * Internal indicator that someone is waiting for the resetGuestLogin to finish
@@ -51,17 +51,17 @@ export class IdentityService extends IIdentityService {
     super();
     this.fetchOrganizations = configFetchOrganizations || false;
     const defaultIdentity: Identity = this.identityFactory.newInstance();
-    this._state = new BehaviorSubject<Identity>(defaultIdentity);
+    this.internalState = new BehaviorSubject<Identity>(defaultIdentity);
 
     // to update local storage
-    this._state.subscribe(x => {
+    this.internalState.subscribe(x => {
       // as the BehaviourSubject always returns at least the default identity,
       // we have to check that is a valid identity before comitting it to local storage
-      this._identity = x;
+      this.internalIdentity = x;
 
       // do not persist, the boostrap identity
-      if (this._identity !== this.boostrapidentity) {
-        this.identityCache.save(this._identity);
+      if (this.internalIdentity !== this.boostrapidentity) {
+        this.identityCache.save(this.internalIdentity);
       }
     });
 
@@ -69,16 +69,16 @@ export class IdentityService extends IIdentityService {
       const tmpIdent = identityCache.get();
       if (tmpIdent.wcToken !== undefined) {
         tmpIdent.isEstablished = true;
-        this._identity = tmpIdent;
+        this.internalIdentity = tmpIdent;
         this.reloadIdentityContext();
       } else {
         this.guestLogin().then(x => x);
       }
     } else {
-      this._state.next(this.boostrapidentity);
+      this.internalState.next(this.boostrapidentity);
     }
 
-    this._identity = defaultIdentity;
+    this.internalIdentity = defaultIdentity;
   }
 
   /**
@@ -86,21 +86,21 @@ export class IdentityService extends IIdentityService {
    * to login, or logout.
    */
   public get state(): Observable<Identity> {
-    return this._state.asObservable().pipe(filter(x => x.isEstablished));
+    return this.internalState.asObservable().pipe(filter(x => x.isEstablished));
   }
 
   /**
    * Log user in, based on credentials
    */
   public login(userName: string, password: string): void {
-    this.identityProvider.login(userName, password, this._identity).then(identity => {
-      this._identity = identity;
+    this.identityProvider.login(userName, password, this.internalIdentity).then(identity => {
+      this.internalIdentity = identity;
 
       if (this.fetchOrganizations) {
         this.identityProvider
-          .getOrganizations(this._identity)
+          .getOrganizations(this.internalIdentity)
           .then(orgIds => {
-            this._identity.allowedOrganizations = orgIds;
+            this.internalIdentity.allowedOrganizations = orgIds;
           })
           .then(y => {
             this.reloadIdentityContext().then(x => {
@@ -122,7 +122,7 @@ export class IdentityService extends IIdentityService {
    */
   public logout(): void {
     this.identityProvider
-      .logout(this._identity)
+      .logout(this.internalIdentity)
       .then(anonymousidentity => {
         this.resetToGuestIdentity().then(x => {
           this.notificationService.success('__USER_LOGOUT_SUCCESS', 'PERPENDICULAR_IDENTITYSERVICE_USER_LOGOUT');
@@ -139,7 +139,7 @@ export class IdentityService extends IIdentityService {
    * Changes the organization id in the current session, and reloads the context. Will emit the changed identity.
    */
   public setActiveOrganization(organizationId: string): void {
-    this.identityProvider.setActiveOrganization(this._identity, organizationId).then(x => {
+    this.identityProvider.setActiveOrganization(this.internalIdentity, organizationId).then(x => {
       this.reloadIdentityContext().then(z => {
         this.notificationService.success('__USER_ORGANIZATION_CHANGE_SUCCESS', 'PERPENDICULAR_IDENTITYSERVICE', {
           organizationId,
@@ -155,7 +155,7 @@ export class IdentityService extends IIdentityService {
    */
   public guestLogin(): Promise<void> {
     return this.identityProvider.guestLogin().then(identity => {
-      this._state.next(identity);
+      this.internalState.next(identity);
       return;
     });
   }
@@ -165,8 +165,8 @@ export class IdentityService extends IIdentityService {
    * all content associated with the current guest user, is now associated with the new Registered User.
    */
   public upgradeToRegisteredCustomer(username: string, password: string): Promise<void> {
-    return this.identityProvider.register(username, password, this._identity).then(identity => {
-      this._identity = identity;
+    return this.identityProvider.register(username, password, this.internalIdentity).then(identity => {
+      this.internalIdentity = identity;
 
       return this.reloadIdentityContext().then(contextIdentity => {
         this.notificationService.success('__USER_ACCOUNT_CREATED', 'PERPENDICULAR_IDENTITYSERVICE_USER_ACCOUNT_CREATED');
@@ -181,7 +181,7 @@ export class IdentityService extends IIdentityService {
   public changePassword(oldPassword: string, newPassword: string): Promise<void> {
     // TODO verify that user is logged in, use notification framework to raise messages to UI
     return this.identityProvider
-      .changePassword(oldPassword, newPassword, this._identity)
+      .changePassword(oldPassword, newPassword, this.internalIdentity)
       .then(x => {
         this.notificationService.success('__USER_PASSWORD_CHANGED', 'PERPENDICULAR_IDENTITYSERVICE_USER_PASSWORD_CHANGE_SUCCESS');
       })
@@ -201,7 +201,7 @@ export class IdentityService extends IIdentityService {
    * @return a promise, optionally containing a security question to ask the user.
    */
   public initiateResetPassword(userIdentification: string): Promise<string> {
-    return this.identityProvider.initiateResetPassword(userIdentification, this._identity);
+    return this.identityProvider.initiateResetPassword(userIdentification, this.internalIdentity);
   }
 
   /**
@@ -213,7 +213,7 @@ export class IdentityService extends IIdentityService {
    *        depending on backend capability.
    */
   public resetPassword(userIdentification: string, oldPassword: string, newPassword: string, verificationText: string): Promise<void> {
-    return this.identityProvider.resetPassword(userIdentification, oldPassword, newPassword, verificationText, this._identity);
+    return this.identityProvider.resetPassword(userIdentification, oldPassword, newPassword, verificationText, this.internalIdentity);
   }
 
   // for admins
@@ -224,17 +224,17 @@ export class IdentityService extends IIdentityService {
   public setupPreviewContext(additionalMemberGroups: string[] = [], startDate: Date = new Date()): Promise<void> {
     // try to get a preview token from WCS
     return this.identityProvider
-      .setupPreviewContext(additionalMemberGroups, startDate, this._identity)
+      .setupPreviewContext(additionalMemberGroups, startDate, this.internalIdentity)
       .then(previewToken => {
-        this._identity.inPreviewMode = true;
-        this._identity.previewToken = previewToken;
-        this._state.next(this._identity);
+        this.internalIdentity.inPreviewMode = true;
+        this.internalIdentity.previewToken = previewToken;
+        this.internalState.next(this.internalIdentity);
         return Promise.resolve();
       })
       .catch(err => {
         // ok, so we didnt get it, so we still set the field, in case other services can use it.
-        this._identity.inPreviewMode = true;
-        this._state.next(this._identity);
+        this.internalIdentity.inPreviewMode = true;
+        this.internalState.next(this.internalIdentity);
         return Promise.resolve();
       });
   }
@@ -243,9 +243,9 @@ export class IdentityService extends IIdentityService {
    * Call backend to set this session in preview mode.
    */
   public destroyPreviewContext(): void {
-    this._identity.previewToken = '';
-    this._identity.inPreviewMode = false;
-    this._state.next(this._identity);
+    this.internalIdentity.previewToken = '';
+    this.internalIdentity.inPreviewMode = false;
+    this.internalState.next(this.internalIdentity);
   }
 
   /**
@@ -273,10 +273,10 @@ export class IdentityService extends IIdentityService {
    * Utility function for forcing a reload of the context for the currently authenticated identity
    */
   public reloadIdentityContext(): Promise<Identity> {
-    return this.identityProvider.getIdentityContext(this._identity).then(x => {
+    return this.identityProvider.getIdentityContext(this.internalIdentity).then(x => {
       return this.identityProvider.getRoles(x).then(roles => {
         x.roles = roles;
-        this._state.next(x);
+        this.internalState.next(x);
 
         return x;
       });

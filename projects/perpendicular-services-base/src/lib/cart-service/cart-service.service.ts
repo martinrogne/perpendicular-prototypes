@@ -10,34 +10,11 @@ import {
   PaymentInstruction, PaymentMethod, ShippingMode, StoreLocation
 } from 'perpendicular-core';
 
-console.log('INIT_START');
-declare let process: any;
-const env = process.env.NODE_ENV;
-
-declare let ngDevMode: boolean;
-console.log('INIT_END');
-
 @Injectable({
   providedIn: 'root'
 })
 export class CartService extends ICartService {
   constructor() {
-    console.log('CONSTRUCTOR_INIT');
-
-    if (env !== 'production') {
-      console.log('WEBPACK_NON_PROD_MODE');
-    }
-
-    if (ngDevMode) {
-      console.log('NG_DEV_MODE');
-    }
-
-    if (isDevMode()) {
-      console.log('IS_DEV_MODE');
-    }
-
-    console.log('CONSTRUCTOR_FINISH');
-
     super();
   }
 

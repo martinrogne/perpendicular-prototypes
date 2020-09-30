@@ -283,9 +283,9 @@ export class WCSProductFactory extends IProductFactory {
 
     p.components = new Array<{ product: Product; quantity: number }>();
     if (json.components) {
-      for (let i = 0; i < json.components.length; i++) {
-        const quantity: number = Number(json.components[i].quantity);
-        const component: Product = this.newInstanceFromJSON(json.components[i]);
+      for (const c of json.components) {
+        const quantity: number = Number(c.quantity);
+        const component: Product = this.newInstanceFromJSON(c);
 
         p.components.push({ product: component, quantity });
       }

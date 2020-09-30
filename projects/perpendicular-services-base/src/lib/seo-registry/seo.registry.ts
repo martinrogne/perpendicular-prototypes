@@ -66,7 +66,7 @@ export class SEORegistry extends ISEORegistry {
   /**
    * Adds the item to the internal cache. As a side effect, it stores the entry under both its urlkeyword and value+type as keys.
    */
-  public addEntry(entry: SEOToken | Promise<SEOToken>, ...lookupParams: any[]): void {
+  public addEntry(entry: SEOToken | Promise<SEOToken>, ...lookupParams: unknown[]): void {
     if (entry instanceof Promise) {
       entry.then(seoToken => {
         this.addSeoTokenEntry(seoToken, ...lookupParams);
@@ -90,7 +90,7 @@ export class SEORegistry extends ISEORegistry {
   /**
    * Helper function to deal with adding the item to the cache
    */
-  private addSeoTokenEntry(entry: SEOToken, ...lookupParams: any[]): void {
+  private addSeoTokenEntry(entry: SEOToken, ...lookupParams: unknown[]): void {
     const prom: Promise<SEOToken> = Promise.resolve(entry);
     this.cachedEntries.set(this.getKey(true, entry.urlkeyword), prom);
     this.cachedEntries.set(this.getKey(false, entry.type, entry.tokenValue), prom);

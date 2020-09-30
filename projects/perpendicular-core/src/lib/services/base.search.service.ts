@@ -16,7 +16,7 @@ import { Identity } from '../models/identity.model';
 export class ISearchService<T, Q extends BaseSearchQuery, R extends BaseSearchResult<T, Q>> {
   protected query: Q;
   protected queue: Subject<Q>;
-  protected _state: BehaviorSubject<R>;
+  protected internalState: BehaviorSubject<R>;
 
   /**
    * Constructor
@@ -29,7 +29,7 @@ export class ISearchService<T, Q extends BaseSearchQuery, R extends BaseSearchRe
   ) {
     this.queue = new Subject<Q>();
     this.query = factory.newQueryInstance();
-    this._state = new BehaviorSubject(factory.newResultInstance(0, 1, [], factory.newQueryInstance()));
+    this.internalState = new BehaviorSubject(factory.newResultInstance(0, 1, [], factory.newQueryInstance()));
     if (this.provider) {
       this.queue
         .asObservable()
@@ -37,7 +37,7 @@ export class ISearchService<T, Q extends BaseSearchQuery, R extends BaseSearchRe
           debounceTime(10),
           switchMap((query: Q) => observableFrom(this.provider.getByQuery(query))),
         )
-        .subscribe((res: R) => this._state.next(res), err => this._state.error(err));
+        .subscribe((res: R) => this.internalState.next(res), err => this.internalState.error(err));
     }
     if (this.identityService) {
       this.identityService.state.subscribe(x => {
@@ -90,7 +90,7 @@ export class ISearchService<T, Q extends BaseSearchQuery, R extends BaseSearchRe
    * information.
    */
   public get state(): Observable<R> {
-    return this._state.asObservable();
+    return this.internalState.asObservable();
   }
 
   /**

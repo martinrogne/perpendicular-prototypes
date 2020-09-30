@@ -130,7 +130,6 @@ export class ProductSearchService extends IProductSearchService {
   /**
    * Removes a filter from the query, and re-executes it.
    * If the field was not filtered, this will not do anything.
-   * @param fieldName
    */
   public removeFilter(fieldName: string): void {
     if (this.query.filters.has(fieldName)) {
@@ -143,7 +142,6 @@ export class ProductSearchService extends IProductSearchService {
   /**
    * Returns whatever filter is applied to the fieldname. Returns the empty string '',
    * if no filter is applied.
-   * @param fieldName
    */
   public getFilter(fieldName: string): string {
     if (this.query.filters.has(fieldName)) {

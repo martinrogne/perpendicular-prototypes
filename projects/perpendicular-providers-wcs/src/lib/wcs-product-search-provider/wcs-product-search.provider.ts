@@ -39,67 +39,67 @@ export class WCSProductSearchProvider extends IProductSearchProvider {
    *
    * 		The following search types are supported:
    *
-   *	|	Match type              |   Search Type		|         Description                                                         |
-   *	-----------------------------------------------------------------------------------------------------------------------------
-   *	| 1.  ANY 					|		0			|  INCLUDE products, kits, bundles                                            |
-   *	|							|					|  EXCLUDE product level SKUs and category level SKUs                         |
-   *	|							|					|                                                                             |
-   *	| 2.  EXACT					|		1			|  INCLUDE products, kits, bundles                                            |
-   *	|							|					|  EXCLUDE product level SKUs and category level SKUs                         |
-   *	|							|					|                                                                             |
-   *	| 3.  ALL					|		2			|  INCLUDE products, kits, bundles                                            |
-   *	|							|					|  EXCLUDE product level SKUs and category level SKUs                         |
-   *	|							|					|                                                                             |
-   *	| 4.  NONE					|		3			|  INCLUDE products, kits, bundles                                            |
-   *	|							|					|  EXCLUDE product level SKUs and category level SKUs						  |
-   *	|							|					|                                                                             |
-   *	| 5.  ANY					|		10			|  INCLUDE products, kits, bundles, product level SKUs, category level SKUs   |
-   *	|							|					|  EXCLUDE                                                                    |
-   *	|							|					|                                                                             |
-   *	| 6.  EXACT					|		11			|  INCLUDE products, kits, bundles, product level SKUs, category level SKUs   |
-   *	|							|					|  EXCLUDE                                                                    |
-   *	|							|					|                                                                             |
-   *	| 7.  ALL					|		12			|  INCLUDE products, kits, bundles, product level SKUs, category level SKUs   |
-   *	|							|					|  EXCLUDE                                                                    |
-   *	|							|					|                                                                             |
-   *	| 8.  NONE					|		13			|  INCLUDE products, kits, bundles, product level SKUs, category level SKUs   |
-   *	|							|					|  EXCLUDE                                                                    |
-   *	|							|					|                                                                             |
-   *	| 9.  ANY					|		100			|  INCLUDE product level SKUs, category level SKUs                            |
-   *	|							|					|  EXCLUDE products, kits, bundles	                                          |
-   *	|							|					|                                                                             |
-   *	| 10.  EXACT				|		101			|  INCLUDE product level SKUs, category level SKUs                            |
-   *	|							|					|  EXCLUDE products, kits, bundles                                            |
-   *	|							|					|                                                                             |
-   *	| 11.  ALL					|		102			|  INCLUDE product level SKUs, category level SKUs                            |
-   *	|							|					|  EXCLUDE products, kits, bundles                                            |
-   *	|							|					|                                                                             |
-   *	| 12.  NONE					|		103			|  INCLUDE product level SKUs, category level SKUs                            |
-   *	|							|					|  EXCLUDE products, kits, bundles                                            |
-   *	|							|					|                                                                             |
-   *	| 13.  ANY					|		1000		|  INCLUDE products, kits, bundles, category level SKUs                       |
-   *	|							|	  (Default)		|  EXCLUDE product level SKUs                                                 |
-   *	|							|					|                                                                             |
-   *	| 14.  EXACT				|		1001		|  INCLUDE products, kits, bundles, category level SKUs                       |
-   *	|							|					|  EXCLUDE product level SKUs                                                 |
-   *	|							|					|                                                                             |
-   *	| 15.  ALL					|		1002		|  INCLUDE products, kits, bundles, category level SKUs                       |
-   *	|							|					|  EXCLUDE product level SKUs                                                 |
-   *	|							|					|                                                                             |
-   *	| 16.  NONE					|		1003		|  INCLUDE products, kits, bundles, category level SKUs                       |
-   *	|							|					|  EXCLUDE product level SKUs								                  |
-   *	|							|					|                                                                             |
-   *	| 17.  ANY					|		10000		|  INCLUDE category level SKUs                                                |
-   *	|							|					|  EXCLUDE products, kits, bundles, product level SKUs                        |
-   *	|							|					|						                                                      |
-   *	| 17.  EXACT				|		10001		|  INCLUDE category level SKUs                                                |
-   *	|							|					|  EXCLUDE products, kits, bundles, product level SKUs						  |
-   *	|							|					|						                                                      |
-   *	| 18.  ALL					|		10002		|  INCLUDE category level SKUs                                                |
-   *	|							|					|  EXCLUDE products, kits, bundles, product level SKUs	                      |
-   *	|							|					|						                                                      |
-   *	| 19.  NONE					|		10003		|  INCLUDE category level SKUs                                                |
-   *	|							|					|  EXCLUDE products, kits, bundles, product level SKUs	                      |
+   * |	Match type              |   Search Type		|         Description                                                         |
+   * -----------------------------------------------------------------------------------------------------------------------------
+   * | 1.  ANY 					|		0			|  INCLUDE products, kits, bundles                                            |
+   * |							|					|  EXCLUDE product level SKUs and category level SKUs                         |
+   * |							|					|                                                                             |
+   * | 2.  EXACT					|		1			|  INCLUDE products, kits, bundles                                            |
+   * |							|					|  EXCLUDE product level SKUs and category level SKUs                         |
+   * |							|					|                                                                             |
+   * | 3.  ALL					|		2			|  INCLUDE products, kits, bundles                                            |
+   * |							|					|  EXCLUDE product level SKUs and category level SKUs                         |
+   * |							|					|                                                                             |
+   * | 4.  NONE					|		3			|  INCLUDE products, kits, bundles                                            |
+   * |							|					|  EXCLUDE product level SKUs and category level SKUs						  |
+   * |							|					|                                                                             |
+   * | 5.  ANY					|		10			|  INCLUDE products, kits, bundles, product level SKUs, category level SKUs   |
+   * |							|					|  EXCLUDE                                                                    |
+   * |							|					|                                                                             |
+   * | 6.  EXACT					|		11			|  INCLUDE products, kits, bundles, product level SKUs, category level SKUs   |
+   * |							|					|  EXCLUDE                                                                    |
+   * |							|					|                                                                             |
+   * | 7.  ALL					|		12			|  INCLUDE products, kits, bundles, product level SKUs, category level SKUs   |
+   * |							|					|  EXCLUDE                                                                    |
+   * |							|					|                                                                             |
+   * | 8.  NONE					|		13			|  INCLUDE products, kits, bundles, product level SKUs, category level SKUs   |
+   * |							|					|  EXCLUDE                                                                    |
+   * |							|					|                                                                             |
+   * | 9.  ANY					|		100			|  INCLUDE product level SKUs, category level SKUs                            |
+   * |							|					|  EXCLUDE products, kits, bundles	                                          |
+   * |							|					|                                                                             |
+   * | 10.  EXACT				|		101			|  INCLUDE product level SKUs, category level SKUs                            |
+   * |							|					|  EXCLUDE products, kits, bundles                                            |
+   * |							|					|                                                                             |
+   * | 11.  ALL					|		102			|  INCLUDE product level SKUs, category level SKUs                            |
+   * |							|					|  EXCLUDE products, kits, bundles                                            |
+   * |							|					|                                                                             |
+   * | 12.  NONE					|		103			|  INCLUDE product level SKUs, category level SKUs                            |
+   * |							|					|  EXCLUDE products, kits, bundles                                            |
+   * |							|					|                                                                             |
+   * | 13.  ANY					|		1000		|  INCLUDE products, kits, bundles, category level SKUs                       |
+   * |							|	  (Default)		|  EXCLUDE product level SKUs                                                 |
+   * |							|					|                                                                             |
+   * | 14.  EXACT				|		1001		|  INCLUDE products, kits, bundles, category level SKUs                       |
+   * |							|					|  EXCLUDE product level SKUs                                                 |
+   * |							|					|                                                                             |
+   * | 15.  ALL					|		1002		|  INCLUDE products, kits, bundles, category level SKUs                       |
+   * |							|					|  EXCLUDE product level SKUs                                                 |
+   * |							|					|                                                                             |
+   * | 16.  NONE					|		1003		|  INCLUDE products, kits, bundles, category level SKUs                       |
+   * |							|					|  EXCLUDE product level SKUs								                  |
+   * |							|					|                                                                             |
+   * | 17.  ANY					|		10000		|  INCLUDE category level SKUs                                                |
+   * |							|					|  EXCLUDE products, kits, bundles, product level SKUs                        |
+   * |							|					|						                                                      |
+   * | 17.  EXACT				|		10001		|  INCLUDE category level SKUs                                                |
+   * |							|					|  EXCLUDE products, kits, bundles, product level SKUs						  |
+   * |							|					|						                                                      |
+   * | 18.  ALL					|		10002		|  INCLUDE category level SKUs                                                |
+   * |							|					|  EXCLUDE products, kits, bundles, product level SKUs	                      |
+   * |							|					|						                                                      |
+   * | 19.  NONE					|		10003		|  INCLUDE category level SKUs                                                |
+   * |							|					|  EXCLUDE products, kits, bundles, product level SKUs	                      |
    *
    *
    */

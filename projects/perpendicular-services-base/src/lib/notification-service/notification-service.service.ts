@@ -32,7 +32,7 @@ export class NotificationService extends INotificationService {
   public stableDelay = 50;
   private pendingRequestsSubject: BehaviorSubject<number>;
   private refCnt = 0;
-  private _messages: Subject<UIMessage>;
+  private internalMessages: Subject<UIMessage>;
 
   /**
    * Default constructor. You should not instantiate this directly; rather get it from the Dependency Injection framework.
@@ -44,7 +44,7 @@ export class NotificationService extends INotificationService {
     public configStableDelay?: number,
   ) {
     super();
-    this._messages = new Subject<UIMessage>();
+    this.internalMessages = new Subject<UIMessage>();
     this.working = new EventEmitter<number>();
     this.pendingRequestsSubject = new BehaviorSubject(0);
     this.stableDelay = configStableDelay || 50;
@@ -67,7 +67,7 @@ export class NotificationService extends INotificationService {
    * ```
    */
   public get messages(): Observable<UIMessage> {
-    return this._messages;
+    return this.internalMessages;
   }
 
   /**
@@ -97,7 +97,7 @@ export class NotificationService extends INotificationService {
    * @param messageCode a code for the specific error 'ERR4004'
    * @param params a map of returned values that relate to the error. The product id that couldnt be added, for instance.
    */
-  public success(messageKey: string, messageCode?: string, parameters?: any): void {
+  public success(messageKey: string, messageCode?: string, parameters?: unknown): void {
     this.addMessage(UIMessageType.SUCCESS, messageKey, messageCode, parameters);
   }
 
@@ -107,7 +107,7 @@ export class NotificationService extends INotificationService {
    * @param messageCode a code for the specific error 'ERR4004'
    * @param params a map of returned values that relate to the error. The product id that couldnt be added, for instance.
    */
-  public error(messageKey: string, messageCode?: string, parameters?: any): void {
+  public error(messageKey: string, messageCode?: string, parameters?: unknown): void {
     this.addMessage(UIMessageType.ERROR, messageKey, messageCode, parameters);
   }
 
@@ -117,7 +117,7 @@ export class NotificationService extends INotificationService {
    * @param messageCode a code for the specific error 'ERR4004'
    * @param params a map of returned values that relate to the error. The product id that couldnt be added, for instance.
    */
-  public warn(messageKey: string, messageCode?: string, parameters?: any): void {
+  public warn(messageKey: string, messageCode?: string, parameters?: unknown): void {
     this.addMessage(UIMessageType.WARN, messageKey, messageCode, parameters);
   }
 
@@ -127,7 +127,7 @@ export class NotificationService extends INotificationService {
    * @param messageCode a code for the specific error 'ERR4004'
    * @param params a map of returned values that relate to the error. The product id that couldnt be added, for instance.
    */
-  public info(messageKey: string, messageCode?: string, parameters?: any): void {
+  public info(messageKey: string, messageCode?: string, parameters?: unknown): void {
     this.addMessage(UIMessageType.INFO, messageKey, messageCode, parameters);
   }
 
@@ -171,12 +171,12 @@ export class NotificationService extends INotificationService {
       });
   }
 
-  private addMessage(type: UIMessageType, messageKey: string, messageCode?: string, parameters?: any): void {
+  private addMessage(type: UIMessageType, messageKey: string, messageCode?: string, parameters?: unknown): void {
     const msg: UIMessage = new UIMessage();
     msg.type = type;
     msg.messageKey = messageKey;
     msg.messageCode = messageCode || '';
     msg.parameters = parameters;
-    this._messages.next(msg);
+    this.internalMessages.next(msg);
   }
 }

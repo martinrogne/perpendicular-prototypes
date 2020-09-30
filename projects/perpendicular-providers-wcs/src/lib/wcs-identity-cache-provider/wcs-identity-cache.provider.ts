@@ -33,7 +33,9 @@ export class WCSIdentityCacheProvider extends IIdentityCacheProvider {
    */
   public get(): Identity {
     if (typeof localStorage !== 'undefined' && localStorage.getItem('WCAuth') !== undefined) {
-      const identity: Identity = this.identityFactory.newInstanceFromIdentity(JSON.parse(localStorage.getItem('WCAuth') as unknown as string));
+      const identity: Identity = this.identityFactory.newInstanceFromIdentity(
+        JSON.parse(localStorage.getItem('WCAuth') as unknown as string)
+      );
       return identity;
     }
     return this.serverIdentity as unknown as Identity;

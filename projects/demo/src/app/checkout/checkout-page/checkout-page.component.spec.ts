@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
 
 import { CheckoutPageComponent } from './checkout-page.component';
 
-fdescribe('CheckoutPageComponent', () => {
+describe('CheckoutPageComponent', () => {
   let spectator: Spectator<CheckoutPageComponent>;
   const createComponent = createComponentFactory( {
     component: CheckoutPageComponent,

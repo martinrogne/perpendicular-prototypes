@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
-import { PerpendicularProvidersWcsComponent } from './perpendicular-providers-wcs.component';
-
-
+import { WCSInterceptorsModule } from './wcsinterceptors/wcsinterceptors.module';
 
 @NgModule({
-  declarations: [PerpendicularProvidersWcsComponent],
+  declarations: [],
   imports: [
+    WCSInterceptorsModule
   ],
-  exports: [PerpendicularProvidersWcsComponent]
+  exports: []
 })
-export class PerpendicularProvidersWcsModule { }
+export class PerpendicularProvidersWCSModule { }
+
+// Interceptors
+export * from './wcsinterceptors/wcsinterceptors.module';
+
+// Providers
+export { WCSIdentityProviderModule } from './wcs-identity-provider/wcs-identity-provider.module';
+export { WCSProductSearchProviderModule } from './wcs-product-search-provider/wcs-product-search-provider.module';
+export { WCSSEOProviderModule} from './wcs-seo-provider/wcs-seo-provider.module';
+export { WCSIdentityCacheProviderModule } from './wcs-identity-cache-provider/wcs-identity-cache-provider.module';

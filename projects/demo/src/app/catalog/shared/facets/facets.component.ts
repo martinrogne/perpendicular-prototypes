@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Facet, IProductSearchService } from 'perpendicular-core';
+import { Facet, FacetValue, IProductSearchService } from 'perpendicular-core';
 
 /**
  * Component for displaying the list of facets that can be applied
@@ -35,15 +35,21 @@ export class FacetsComponent implements OnInit {
   /**
    * Utility handler for toggling a facet on or off
    */
-  public toggleFacet(value: string): void {
-    this.service.toggleFacet(value);
+  public toggleFacet(value: FacetValue): void {
+    if (value.value) {
+      this.service.toggleFacet(value.value);
+    }
   }
 
   /**
    * Utility function to check if a facet is toggled
    */
-  public isFacetToggled(value: string): boolean {
-    return this.service.queryHasFacet(value);
+  public isFacetToggled(value: FacetValue): boolean {
+    if (value.value) {
+      return this.service.queryHasFacet(value.value);
+    }
+
+    return false;
   }
 
 }

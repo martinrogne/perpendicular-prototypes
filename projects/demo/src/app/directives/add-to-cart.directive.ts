@@ -34,7 +34,9 @@ export class AddToCartDirective {
    * Handler for the click action on an element
    */
   @HostListener('click') onClick(): void {
-    this.service.addToCart(this.product.productId, 1);
+    if (this.product.productId) {
+      this.service.addToCart(this.product.productId, 1);
+    }
   }
 
   /**

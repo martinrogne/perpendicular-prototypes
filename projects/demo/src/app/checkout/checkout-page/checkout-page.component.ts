@@ -87,8 +87,7 @@ export class CheckoutPageComponent implements OnInit {
 
     const payLater = payment.find(x => x.paymentMethodName === 'PayLater');
     if (payLater) {
-      const paymentInstruction = this.paymentInstructionFactory.newInstanceFromPaymentMethod(payLater);
-      await this.service.addPaymentInstruction(paymentInstruction);
+      this.service.setPaymentMethod(payLater);
 
       console.log('await c3...');
 

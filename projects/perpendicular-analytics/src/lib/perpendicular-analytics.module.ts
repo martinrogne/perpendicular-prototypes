@@ -10,4 +10,4 @@ import { NgModule } from '@angular/core';
 })
 export class PerpendicularAnalyticsModule { }
 
-export * from 'google-tag-manager-provider/google-tag-manager-provider.module';
+export * from './google-tag-manager-provider/google-tag-manager-provider.module';

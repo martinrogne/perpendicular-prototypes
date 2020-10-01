@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {CartItem, ICartFactory} from '@perpendicular/core';
-import {WCSCart, WCSCartFactory, WCSCartItem} from '@perpendicular/providers-wcs';
+import {CartItem, ICartFactory} from 'perpendicular-core';
+import {WCSCart, WCSCartFactory, WCSCartItem} from 'perpendicular-providers-wcs';
 
 /**
  * Component for displaying a single item from the cart

@@ -1,5 +1,5 @@
 import { Directive, Input } from '@angular/core';
-import { IAnalyticsService, Product } from '@perpendicular/core';
+import { IAnalyticsService, Product } from 'perpendicular-core';
 import { OnInputChange } from '../core/decorators/on-input-change-decorator';
 
 /**

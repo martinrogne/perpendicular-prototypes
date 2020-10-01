@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ICookieService } from '@perpendicular/core';
+import { ICookieService } from 'perpendicular-core';
 
 /**
  * A cookie service for client side

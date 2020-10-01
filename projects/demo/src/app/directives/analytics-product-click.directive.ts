@@ -1,5 +1,5 @@
 import { Directive, HostListener, Input } from '@angular/core';
-import { IAnalyticsService, Product } from '@perpendicular/core';
+import { IAnalyticsService, Product } from 'perpendicular-core';
 
 /**
  * Directive to handle registering the analytics event

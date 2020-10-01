@@ -5,7 +5,7 @@
     </h4>
   </legend>
   <label *ngFor="let value of facet.values">
-    <input type="checkbox" (click)="toggleFacet(value.value)" [checked]="isFacetToggled(value.value)"/>
+    <input type="checkbox" (click)="toggleFacet(value)" [checked]="isFacetToggled(value)"/>
     {{ value.name}} ({{value.count}})
   </label>
 </fieldset>

@@ -35,9 +35,12 @@ export class AnalyticsProductImpressionDirective {
   public productChanged(product: Product): void {
     if (this.product && this.list && this.index !== undefined) {
       const index = new Map<string, number>();
-      index.set(product.productId, this.index);
 
-      this.analyticsService.trackProductImpressions([product], this.list, index);
+      if (this.product.productId !== undefined) {
+        index.set(product.productId || '', this.index);
+
+        this.analyticsService.trackProductImpressions([product], this.list, index);
+      }
     }
 
   }

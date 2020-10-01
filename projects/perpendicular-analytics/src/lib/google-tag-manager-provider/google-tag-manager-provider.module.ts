@@ -13,8 +13,5 @@ import { EnhancedAngulartics2GoogleTagManager } from './google-tag-manager.provi
 })
 export class GoogleTagManagerProviderModule { }
 
-// Modules
-export { GoogleTagManagerProviderModule } from './lib/google-tag-manager-provider/google-tag-manager-provider.module';
-
 // Providers
-export { EnhancedAngulartics2GoogleTagManager } from './lib/google-tag-manager-provider/google-tag-manager.provider';
+export { EnhancedAngulartics2GoogleTagManager } from './google-tag-manager.provider';

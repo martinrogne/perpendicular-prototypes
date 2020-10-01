@@ -1,5 +1,5 @@
 import { Component, Injector, OnInit } from '@angular/core';
-import { IProductSearchService, ProductSearchResult } from '@perpendicular/core';
+import { IProductSearchService, ProductSearchResult } from 'perpendicular-core';
 import { ServiceStateBind } from '../../core/decorators/service-state-bind-decorator';
 
 /**

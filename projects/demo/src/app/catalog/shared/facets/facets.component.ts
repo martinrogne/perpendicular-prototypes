@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Facet, IProductSearchService } from '@perpendicular/core';
+import { Facet, IProductSearchService } from 'perpendicular-core';
 
 /**
  * Component for displaying the list of facets that can be applied

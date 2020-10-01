@@ -1,29 +1,14 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Spectator, createComponentFactory } from '@ngneat/spectator';
 
 import { SearchBarComponent } from './search-bar.component';
-import { MocksModule } from '../../mocks/mocks.module';
 
 describe('SearchBarComponent', () => {
-  let component: SearchBarComponent;
-  let fixture: ComponentFixture<SearchBarComponent>;
+  let spectator: Spectator<SearchBarComponent>;
+  const createComponent = createComponentFactory(SearchBarComponent);
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        MocksModule
-      ],
-      declarations: [ SearchBarComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SearchBarComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  beforeEach(() => spectator = createComponent());
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(spectator.component).toBeTruthy();
   });
 });

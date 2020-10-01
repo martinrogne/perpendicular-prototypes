@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { Product } from '@perpendicular/core';
+import { Product } from 'perpendicular-core';
 
 @Component({
   selector: 'app-product-grid',

@@ -1,27 +1,14 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Spectator, createComponentFactory } from '@ngneat/spectator';
 
 import { ProductTileComponent } from './product-tile.component';
-import { MocksModule } from '../../../mocks/mocks.module';
 
 describe('ProductTileComponent', () => {
-  let component: ProductTileComponent;
-  let fixture: ComponentFixture<ProductTileComponent>;
+  let spectator: Spectator<ProductTileComponent>;
+  const createComponent = createComponentFactory(ProductTileComponent);
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [ MocksModule ],
-      declarations: [ ProductTileComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ProductTileComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  beforeEach(() => spectator = createComponent());
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(spectator.component).toBeTruthy();
   });
 });

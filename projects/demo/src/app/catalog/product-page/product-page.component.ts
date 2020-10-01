@@ -1,6 +1,6 @@
 import { Component, Injector, OnInit } from '@angular/core';
 import { RouteDataBind } from '../../core/decorators/route-data-bind-decorator';
-import {IProductFactory, Product} from '@perpendicular/core';
+import {IProductFactory, Product} from 'perpendicular-core';
 
 /**
  * Component for rendering the detailed product page

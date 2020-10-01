@@ -1,5 +1,5 @@
 import { AfterViewInit, Directive, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
-import { IProductSearchService } from '@perpendicular/core';
+import { IProductSearchService } from 'perpendicular-core';
 import { ActivatedRoute } from '@angular/router';
 
 /**

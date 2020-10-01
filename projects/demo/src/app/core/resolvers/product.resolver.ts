@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
-import { IAnalyticsService, IProductRegistry, ISEORegistry, Product } from '@perpendicular/core';
+import { IAnalyticsService, IProductRegistry, ISEORegistry, Product } from 'perpendicular-core';
 
 /**
  * Resolver for mapping a product SEO token on the URL to a valid product

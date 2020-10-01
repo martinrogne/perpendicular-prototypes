@@ -7,7 +7,7 @@ import {
   ICartService,
   IPaymentInstructionFactory,
   IProfileService
-} from '@perpendicular/core';
+} from 'perpendicular-core';
 import { debounceTime, filter, first } from 'rxjs/operators';
 
 /**

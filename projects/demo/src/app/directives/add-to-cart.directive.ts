@@ -1,5 +1,5 @@
 import { Directive, HostBinding, HostListener, Input } from '@angular/core';
-import {ICartService, IProductFactory, Product} from '@perpendicular/core';
+import {ICartService, IProductFactory, Product} from 'perpendicular-core';
 import { OnInputChange } from '../core/decorators/on-input-change-decorator';
 
 /**

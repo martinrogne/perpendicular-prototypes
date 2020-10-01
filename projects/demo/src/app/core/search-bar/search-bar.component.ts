@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { IProductSearchService } from '@perpendicular/core';
+import { IProductSearchService } from 'perpendicular-core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 /**

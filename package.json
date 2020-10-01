@@ -34,7 +34,7 @@
     "@sentry/angular": "^5.22.3",
     "@sentry/tracing": "^5.22.3",
     "angulartics2": "^9.0.1",
-    "rxjs": "~6.5.5",
+    "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

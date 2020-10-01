@@ -1,0 +1,2785 @@
+{
+  "recordSetTotal": 945,
+  "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/bySearchTerm\/dress?searchSource=E&searchType=100&pageSize=24&pageNumber=1&intentSearchTerm=dress",
+  "recordSetCount": 24,
+  "facetView": [
+    {
+      "extendedData": {
+        "displaySequence": "0.0",
+        "srchattridentifier": "_cat.OfferPrice_USD",
+        "group_id": "0",
+        "max_display": "20",
+        "maximumValuesToDisplay": "20",
+        "propertyvalue": "price_USD:{* 50} 50;{50 200} 200;{200 500} 500;{500 1000} 1000;{1000 2500} 2500;{2500 *}",
+        "zero_display": "0",
+        "storeent_id": "0",
+        "displayable": "1",
+        "srchattr_id": "-1016",
+        "selection": "0",
+        "facet_id": "-1002",
+        "groupId": "0",
+        "sortorder": "0",
+        "fdesc": "Price-USD",
+        "propertyname": "facet",
+        "keyword_search": "1",
+        "fname": "Price (USD)",
+        "allowMultipleValueSelection": "false"
+      },
+      "entry": [
+        {
+          "extendedData": {
+            "uniqueId": "112114105991019585836858401234232534812532534841"
+          },
+          "count": 486,
+          "value": "price_USD%3A%28%7B*+50%7D+50%29",
+          "label": "({* 50} 50)"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "112114105991019585836858401235348325048481253250484841"
+          },
+          "count": 313,
+          "value": "price_USD%3A%28%7B50+200%7D+200%29",
+          "label": "({50 200} 200)"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "11211410599101958583685840123504848325348481253253484841"
+          },
+          "count": 146,
+          "value": "price_USD%3A%28%7B200+500%7D+500%29",
+          "label": "({200 500} 500)"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "112114105991019585836858401235348483249484848125324948484841"
+          },
+          "count": 0,
+          "value": "price_USD%3A%28%7B500+1000%7D+1000%29",
+          "label": "({500 1000} 1000)"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "11211410599101958583685840123494848483250534848125325053484841"
+          },
+          "count": 0,
+          "value": "price_USD%3A%28%7B1000+2500%7D+2500%29",
+          "label": "({1000 2500} 2500)"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "1121141059910195858368584012350534848324212541"
+          },
+          "count": 0,
+          "value": "price_USD%3A%28%7B2500+*%7D%29",
+          "label": "({2500 *})"
+        }
+      ],
+      "name": "OfferPrice_USD",
+      "value": "price_USD"
+    },
+    {
+      "extendedData": {
+        "displaySequence": "0.0",
+        "srchattridentifier": "_cat.ParentCatalogGroup",
+        "group_id": "0",
+        "allValuesReturned": true,
+        "max_display": "20",
+        "maximumValuesToDisplay": "20",
+        "propertyvalue": "parentCatgroup_id_search",
+        "zero_display": "0",
+        "storeent_id": "0",
+        "displayable": "1",
+        "srchattr_id": "-1013",
+        "selection": "0",
+        "facet_id": "-1001",
+        "groupId": "0",
+        "sortorder": "0",
+        "fdesc": "The category",
+        "propertyname": "facet",
+        "keyword_search": "1",
+        "fname": "Category",
+        "allowMultipleValueSelection": "false"
+      },
+      "name": "ParentCatalogGroup",
+      "entry": [
+        {
+          "extendedData": {
+            "uniqueId": "10001"
+          },
+          "count": "943",
+          "value": "10001",
+          "label": "Apparel"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001",
+            "uniqueId": "10003"
+          },
+          "count": "767",
+          "value": "10003",
+          "label": "Women"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10003",
+            "uniqueId": "10006"
+          },
+          "count": "702",
+          "value": "10006",
+          "label": "Dresses"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001",
+            "uniqueId": "10002"
+          },
+          "count": "104",
+          "value": "10002",
+          "label": "Men"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001",
+            "uniqueId": "10005"
+          },
+          "count": "72",
+          "value": "10005",
+          "label": "Girls"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10005",
+            "uniqueId": "10022"
+          },
+          "count": "59",
+          "value": "10022",
+          "label": "Skirts"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10002",
+            "uniqueId": "10019"
+          },
+          "count": "40",
+          "value": "10019",
+          "label": "Apparel\/Men\/Shoes"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10003",
+            "uniqueId": "10008"
+          },
+          "count": "30",
+          "value": "10008",
+          "label": "Sweaters"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10002",
+            "uniqueId": "10015"
+          },
+          "count": "30",
+          "value": "10015",
+          "label": "Shirts"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10003",
+            "uniqueId": "10011"
+          },
+          "count": "23",
+          "value": "10011",
+          "label": "Apparel\/Women\/Shoes"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10002",
+            "uniqueId": "10017"
+          },
+          "count": "18",
+          "value": "10017",
+          "label": "Apparel\/Men\/Pants"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10002",
+            "uniqueId": "10018"
+          },
+          "count": "10",
+          "value": "10018",
+          "label": "Apparel\/Men\/Accessories"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10005",
+            "uniqueId": "10023"
+          },
+          "count": "9",
+          "value": "10023",
+          "label": "Tops"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10002",
+            "uniqueId": "10014"
+          },
+          "count": "6",
+          "value": "10014",
+          "label": "Jackets"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10003",
+            "uniqueId": "10010"
+          },
+          "count": "5",
+          "value": "10010",
+          "label": "Apparel\/Women\/Pants"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10003",
+            "uniqueId": "10013"
+          },
+          "count": "5",
+          "value": "10013",
+          "label": "Apparel\/Women\/Accessories"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10005",
+            "uniqueId": "10020"
+          },
+          "count": "4",
+          "value": "10020",
+          "label": "Apparel\/Girls\/Shoes"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10001_10003",
+            "uniqueId": "10012"
+          },
+          "count": "2",
+          "value": "10012",
+          "label": "Handbags"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "10048"
+          },
+          "count": "2",
+          "value": "10048",
+          "label": "Newsletters & Magazines"
+        },
+        {
+          "extendedData": {
+            "parentIds": "10048",
+            "uniqueId": "10049"
+          },
+          "count": "2",
+          "value": "10049",
+          "label": "Magazines"
+        }
+      ],
+      "value": "parentCatgroup_id_search"
+    },
+    {
+      "extendedData": {
+        "displaySequence": "0.0",
+        "srchattridentifier": "_cat.ManufacturerName",
+        "group_id": "0",
+        "allValuesReturned": true,
+        "max_display": "20",
+        "maximumValuesToDisplay": "20",
+        "propertyvalue": "mfName_ntk_cs",
+        "zero_display": "0",
+        "storeent_id": "0",
+        "displayable": "1",
+        "srchattr_id": "-1002",
+        "selection": "0",
+        "facet_id": "-1000",
+        "groupId": "0",
+        "sortorder": "0",
+        "fdesc": "The manufacturer",
+        "propertyname": "facet",
+        "keyword_search": "1",
+        "fname": "Brand",
+        "allowMultipleValueSelection": "false"
+      },
+      "name": "ManufacturerName",
+      "entry": [
+        {
+          "extendedData": {
+            "uniqueId": "-10026510898105110105"
+          },
+          "count": "199",
+          "value": "mfName_ntk_cs%3A%22Albini%22",
+          "label": "Albini"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-100271117115115111"
+          },
+          "count": "188",
+          "value": "mfName_ntk_cs%3A%22Gusso%22",
+          "label": "Gusso"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-100276117105103105328697108101110116105"
+          },
+          "count": "177",
+          "value": "mfName_ntk_cs%3A%22Luigi+Valenti%22",
+          "label": "Luigi Valenti"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-10028610111411597116105108"
+          },
+          "count": "146",
+          "value": "mfName_ntk_cs%3A%22Versatil%22",
+          "label": "Versatil"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-10027210111410910511697103101326711110810810199116105111110"
+          },
+          "count": "136",
+          "value": "mfName_ntk_cs%3A%22Hermitage+Collection%22",
+          "label": "Hermitage Collection"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-10026611111411597116105"
+          },
+          "count": "36",
+          "value": "mfName_ntk_cs%3A%22Borsati%22",
+          "label": "Borsati"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-100276101111"
+          },
+          "count": "21",
+          "value": "mfName_ntk_cs%3A%22Leo%22",
+          "label": "Leo"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-10027797121102108111119101114"
+          },
+          "count": "16",
+          "value": "mfName_ntk_cs%3A%22Mayflower%22",
+          "label": "Mayflower"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-100277101115111"
+          },
+          "count": "13",
+          "value": "mfName_ntk_cs%3A%22Meso%22",
+          "label": "Meso"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-100269109101114121"
+          },
+          "count": "7",
+          "value": "mfName_ntk_cs%3A%22Emery%22",
+          "label": "Emery"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-100267111111108101114115"
+          },
+          "count": "4",
+          "value": "mfName_ntk_cs%3A%22Coolers%22",
+          "label": "Coolers"
+        },
+        {
+          "extendedData": {
+            "uniqueId": "-1002871011001001051101033276117120101"
+          },
+          "count": "2",
+          "value": "mfName_ntk_cs%3A%22Wedding+Luxe%22",
+          "label": "Wedding Luxe"
+        }
+      ],
+      "value": "mfName_ntk_cs"
+    },
+    {
+      "extendedData": {
+        "attr_id": "7000000000000000002",
+        "displaySequence": "0.0",
+        "attrsequence": "0.0",
+        "srchattridentifier": "_cat.swatchcolor",
+        "group_id": "0",
+        "allValuesReturned": true,
+        "max_display": "-1",
+        "maximumValuesToDisplay": "-1",
+        "propertyvalue": "ads_f11005_ntk_cs",
+        "zero_display": "0",
+        "displayable": "1",
+        "storeent_id": "10051",
+        "srchattr_id": "11005",
+        "attrdesc": "Color",
+        "attrname": "Color",
+        "selection": "0",
+        "facet_id": "10505",
+        "groupId": "0",
+        "sortorder": "0",
+        "attridentifier": "swatchcolor",
+        "propertyname": "facet",
+        "keyword_search": "1",
+        "allowMultipleValueSelection": "false"
+      },
+      "name": "Color",
+      "entry": [
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_blue.png",
+            "sequence": "6.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100566108117101"
+          },
+          "count": "133",
+          "value": "ads_f11005_ntk_cs%3A%22Blue%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_blue.png",
+          "label": "Blue"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_purple.png",
+            "sequence": "7.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100580117114112108101"
+          },
+          "count": "85",
+          "value": "ads_f11005_ntk_cs%3A%22Purple%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_purple.png",
+          "label": "Purple"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_green.png",
+            "sequence": "13.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100571114101101110"
+          },
+          "count": "74",
+          "value": "ads_f11005_ntk_cs%3A%22Green%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_green.png",
+          "label": "Green"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_red.png",
+            "sequence": "1.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100582101100"
+          },
+          "count": "70",
+          "value": "ads_f11005_ntk_cs%3A%22Red%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_red.png",
+          "label": "Red"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_pink.png",
+            "sequence": "11.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100580105110107"
+          },
+          "count": "68",
+          "value": "ads_f11005_ntk_cs%3A%22Pink%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_pink.png",
+          "label": "Pink"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_gray.png",
+            "sequence": "4.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "110057111497121"
+          },
+          "count": "61",
+          "value": "ads_f11005_ntk_cs%3A%22Gray%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_gray.png",
+          "label": "Gray"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_brown.png",
+            "sequence": "10.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100566114111119110"
+          },
+          "count": "36",
+          "value": "ads_f11005_ntk_cs%3A%22Brown%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_brown.png",
+          "label": "Brown"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+            "sequence": "9.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100583105108118101114"
+          },
+          "count": "32",
+          "value": "ads_f11005_ntk_cs%3A%22Silver%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+          "label": "Silver"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_black.png",
+            "sequence": "13.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "11005661089799107"
+          },
+          "count": "29",
+          "value": "ads_f11005_ntk_cs%3A%22Black%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_black.png",
+          "label": "Black"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_orange.png",
+            "sequence": "5.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "110057911497110103101"
+          },
+          "count": "26",
+          "value": "ads_f11005_ntk_cs%3A%22Orange%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_orange.png",
+          "label": "Orange"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_teal.png",
+            "sequence": "2.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "110058410197108"
+          },
+          "count": "25",
+          "value": "ads_f11005_ntk_cs%3A%22Teal%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_teal.png",
+          "label": "Teal"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_white.png",
+            "sequence": "8.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100587104105116101"
+          },
+          "count": "14",
+          "value": "ads_f11005_ntk_cs%3A%22White%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_white.png",
+          "label": "White"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_yellow.png",
+            "sequence": "3.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100589101108108111119"
+          },
+          "count": "13",
+          "value": "ads_f11005_ntk_cs%3A%22Yellow%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_yellow.png",
+          "label": "Yellow"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_gold.png",
+            "sequence": "13.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100571111108100"
+          },
+          "count": "11",
+          "value": "ads_f11005_ntk_cs%3A%22Gold%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_gold.png",
+          "label": "Gold"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_lightblue.png",
+            "sequence": "12.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "11005761051031041163266108117101"
+          },
+          "count": "10",
+          "value": "ads_f11005_ntk_cs%3A%22Light+Blue%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_lightblue.png",
+          "label": "Light Blue"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_beige.png",
+            "sequence": "13.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100566101105103101"
+          },
+          "count": "9",
+          "value": "ads_f11005_ntk_cs%3A%22Beige%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_beige.png",
+          "label": "Beige"
+        },
+        {
+          "extendedData": {
+            "image1": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_navy.png",
+            "sequence": "13.0",
+            "unitOfMeasure": "one",
+            "unitID": "C62",
+            "uniqueId": "1100568971141073266108117101"
+          },
+          "count": "6",
+          "value": "ads_f11005_ntk_cs%3A%22Dark+Blue%22",
+          "image": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_navy.png",
+          "label": "Dark Blue"
+        }
+      ],
+      "value": "ads_f11005_ntk_cs"
+    }
+  ],
+  "catalogEntryView": [
+    {
+      "hasSingleSKU": false,
+      "seotoken": "luigi-valenti-strapless-cocktail-dress-aurorawmdrs-075",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10114",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10114",
+      "price": [
+        {
+          "description": "L",
+          "value": "250.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0006_a_purple.jpg",
+      "shortDescription": "Strapless cocktail dress with appliqued roses and tassels at the hem",
+      "manufacturer": "Luigi Valenti",
+      "name": "Luigi Valenti Strapless Cocktail Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xl_enabled.png",
+              "sequence": "5.00000",
+              "value": "XL",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xl_enabled.png",
+              "uniqueID": "7000000000000000005",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "XL"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_purple.png",
+              "sequence": "7.00000",
+              "value": "Purple",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_purple.png",
+              "uniqueID": "7000000000000000013",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Purple"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-075"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-silk-evening-dress-aurorawmdrs-307",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10321",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10321",
+      "price": [
+        {
+          "description": "L",
+          "value": "250.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "250.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0024_a_gold.jpg",
+      "shortDescription": "Sleeveless evening dress with applique and sequined work",
+      "manufacturer": "Gusso",
+      "name": "Gusso Silk Evening Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_m_enabled.png",
+              "sequence": "3.00000",
+              "value": "M",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_m_enabled.png",
+              "uniqueID": "7000000000000000002",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "M"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_gold.png",
+              "sequence": "13.00000",
+              "value": "Gold",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_gold.png",
+              "uniqueID": "7000000000000000023",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Gold"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-307"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-knit-casual-dress-aurorawmdrs-670",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10684",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10684",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0038_a_gray.jpg",
+      "shortDescription": "Printed sleeveless pencil dress",
+      "manufacturer": "Gusso",
+      "name": "Gusso Knit Casual Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_m_enabled.png",
+              "sequence": "3.00000",
+              "value": "M",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_m_enabled.png",
+              "uniqueID": "7000000000000000002",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "M"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_gray.png",
+              "sequence": "4.00000",
+              "value": "Gray",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_gray.png",
+              "uniqueID": "7000000000000000010",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Gray"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-670"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-knit-casual-dress-aurorawmdrs-679",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10693",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10693",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0038_a_purple.jpg",
+      "shortDescription": "Printed sleeveless pencil dress",
+      "manufacturer": "Gusso",
+      "name": "Gusso Knit Casual Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xxl_enabled.png",
+              "sequence": "6.00000",
+              "value": "2XL",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xxl_enabled.png",
+              "uniqueID": "7000000000000000006",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "2XL"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_purple.png",
+              "sequence": "7.00000",
+              "value": "Purple",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_purple.png",
+              "uniqueID": "7000000000000000013",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Purple"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-679"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-knit-casual-dress-aurorawmdrs-681",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10695",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10695",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0038_a_teal.jpg",
+      "shortDescription": "Printed sleeveless pencil dress",
+      "manufacturer": "Gusso",
+      "name": "Gusso Knit Casual Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_s_enabled.png",
+              "sequence": "2.00000",
+              "value": "S",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_s_enabled.png",
+              "uniqueID": "7000000000000000001",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "S"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_teal.png",
+              "sequence": "2.00000",
+              "value": "Teal",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_teal.png",
+              "uniqueID": "7000000000000000008",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Teal"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-681"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-knit-casual-dress-aurorawmdrs-684",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10698",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10698",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0038_a_teal.jpg",
+      "shortDescription": "Printed sleeveless pencil dress",
+      "manufacturer": "Gusso",
+      "name": "Gusso Knit Casual Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xl_enabled.png",
+              "sequence": "5.00000",
+              "value": "XL",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xl_enabled.png",
+              "uniqueID": "7000000000000000005",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "XL"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_teal.png",
+              "sequence": "2.00000",
+              "value": "Teal",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_teal.png",
+              "uniqueID": "7000000000000000008",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Teal"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-684"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-knit-casual-dress-aurorawmdrs-685",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10699",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10699",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0038_a_teal.jpg",
+      "shortDescription": "Printed sleeveless pencil dress",
+      "manufacturer": "Gusso",
+      "name": "Gusso Knit Casual Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xxl_enabled.png",
+              "sequence": "6.00000",
+              "value": "2XL",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xxl_enabled.png",
+              "uniqueID": "7000000000000000006",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "2XL"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_teal.png",
+              "sequence": "2.00000",
+              "value": "Teal",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_teal.png",
+              "uniqueID": "7000000000000000008",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Teal"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-685"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-silk-evening-dress-aurorawmdrs-316",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10330",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10330",
+      "price": [
+        {
+          "description": "L",
+          "value": "250.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "250.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0024_a_silver.jpg",
+      "shortDescription": "Sleeveless evening dress with applique and sequined work",
+      "manufacturer": "Gusso",
+      "name": "Gusso Silk Evening Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_l_enabled.png",
+              "sequence": "4.00000",
+              "value": "L",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_l_enabled.png",
+              "uniqueID": "7000000000000000003",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "L"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+              "sequence": "9.00000",
+              "value": "Silver",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+              "uniqueID": "7000000000000000015",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Silver"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-316"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-sleeveless-sequined-dress-aurorawmdrs-406",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10420",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10420",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0033_a_silver.jpg",
+      "shortDescription": "Sleeveless cocktail dress with high neck and sequence work",
+      "manufacturer": "Gusso",
+      "name": "Gusso Sleeveless Sequined Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_l_enabled.png",
+              "sequence": "4.00000",
+              "value": "L",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_l_enabled.png",
+              "uniqueID": "7000000000000000003",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "L"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+              "sequence": "9.00000",
+              "value": "Silver",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+              "uniqueID": "7000000000000000015",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Silver"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-406"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "versatil-casual-evening-dress-aurorawmdrs-572",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10586",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10586",
+      "price": [
+        {
+          "description": "L",
+          "value": "50.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "50.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0039_a_blue.jpg",
+      "shortDescription": "Sleeveless slip dress with ruffled front and lace work",
+      "manufacturer": "Versatil",
+      "name": "Versatil Casual Evening Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_blue.png",
+              "sequence": "6.00000",
+              "value": "Blue",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_blue.png",
+              "uniqueID": "7000000000000000012",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Blue"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_l_enabled.png",
+              "sequence": "4.00000",
+              "value": "L",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_l_enabled.png",
+              "uniqueID": "7000000000000000003",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "L"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-572"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-knit-casual-dress-aurorawmdrs-662",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10676",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10676",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0038_a_blue.jpg",
+      "shortDescription": "Printed sleeveless pencil dress",
+      "manufacturer": "Gusso",
+      "name": "Gusso Knit Casual Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xs_enabled.png",
+              "sequence": "1.00000",
+              "value": "XS",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xs_enabled.png",
+              "uniqueID": "7000000000000000004",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "XS"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_blue.png",
+              "sequence": "6.00000",
+              "value": "Blue",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_blue.png",
+              "uniqueID": "7000000000000000012",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Blue"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-662"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-silk-evening-dress-aurorawmdrs-317",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10331",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10331",
+      "price": [
+        {
+          "description": "L",
+          "value": "250.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "250.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0024_a_silver.jpg",
+      "shortDescription": "Sleeveless evening dress with applique and sequined work",
+      "manufacturer": "Gusso",
+      "name": "Gusso Silk Evening Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xxl_enabled.png",
+              "sequence": "6.00000",
+              "value": "2XL",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xxl_enabled.png",
+              "uniqueID": "7000000000000000006",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "2XL"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+              "sequence": "9.00000",
+              "value": "Silver",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+              "uniqueID": "7000000000000000015",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Silver"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-317"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-cocktail-sheath-dress-aurorawmdrs-491",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10505",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10505",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0012_a_silver.jpg",
+      "shortDescription": "Figure-hugging sleeveless cocktail dress with empire waist",
+      "manufacturer": "Gusso",
+      "name": "Gusso Cocktail Sheath Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xl_enabled.png",
+              "sequence": "5.00000",
+              "value": "XL",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xl_enabled.png",
+              "uniqueID": "7000000000000000005",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "XL"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+              "sequence": "9.00000",
+              "value": "Silver",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+              "uniqueID": "7000000000000000015",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Silver"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-491"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "luigi-valenti-strapless-cocktail-dress-aurorawmdrs-073",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10112",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10112",
+      "price": [
+        {
+          "description": "L",
+          "value": "250.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0006_a_purple.jpg",
+      "shortDescription": "Strapless cocktail dress with appliqued roses and tassels at the hem",
+      "manufacturer": "Luigi Valenti",
+      "name": "Luigi Valenti Strapless Cocktail Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_m_enabled.png",
+              "sequence": "3.00000",
+              "value": "M",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_m_enabled.png",
+              "uniqueID": "7000000000000000002",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "M"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_purple.png",
+              "sequence": "7.00000",
+              "value": "Purple",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_purple.png",
+              "uniqueID": "7000000000000000013",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Purple"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-073"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-sleeveless-sequined-dress-aurorawmdrs-397",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10411",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10411",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0033_a_red.jpg",
+      "shortDescription": "Sleeveless cocktail dress with high neck and sequence work",
+      "manufacturer": "Gusso",
+      "name": "Gusso Sleeveless Sequined Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xs_enabled.png",
+              "sequence": "1.00000",
+              "value": "XS",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xs_enabled.png",
+              "uniqueID": "7000000000000000004",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "XS"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_red.png",
+              "sequence": "1.00000",
+              "value": "Red",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_red.png",
+              "uniqueID": "7000000000000000007",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Red"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-397"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-cocktail-sheath-dress-aurorawmdrs-482",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10496",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10496",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0012_a_green.jpg",
+      "shortDescription": "Figure-hugging sleeveless cocktail dress with empire waist",
+      "manufacturer": "Gusso",
+      "name": "Gusso Cocktail Sheath Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_s_enabled.png",
+              "sequence": "2.00000",
+              "value": "S",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_s_enabled.png",
+              "uniqueID": "7000000000000000001",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "S"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_green.png",
+              "sequence": "13.00000",
+              "value": "Green",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_green.png",
+              "uniqueID": "7000000000000000024",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Green"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-482"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-cocktail-sheath-dress-aurorawmdrs-485",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10499",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10499",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0012_a_green.jpg",
+      "shortDescription": "Figure-hugging sleeveless cocktail dress with empire waist",
+      "manufacturer": "Gusso",
+      "name": "Gusso Cocktail Sheath Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xl_enabled.png",
+              "sequence": "5.00000",
+              "value": "XL",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xl_enabled.png",
+              "uniqueID": "7000000000000000005",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "XL"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_green.png",
+              "sequence": "13.00000",
+              "value": "Green",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_green.png",
+              "uniqueID": "7000000000000000024",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Green"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-485"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "versatil-casual-evening-dress-aurorawmdrs-576",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10590",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10590",
+      "price": [
+        {
+          "description": "L",
+          "value": "50.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "50.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0039_a_pink.jpg",
+      "shortDescription": "Sleeveless slip dress with ruffled front and lace work",
+      "manufacturer": "Versatil",
+      "name": "Versatil Casual Evening Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_s_enabled.png",
+              "sequence": "2.00000",
+              "value": "S",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_s_enabled.png",
+              "uniqueID": "7000000000000000001",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "S"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_pink.png",
+              "sequence": "11.00000",
+              "value": "Pink",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_pink.png",
+              "uniqueID": "7000000000000000017",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Pink"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-576"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "versatil-casual-evening-dress-aurorawmdrs-581",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10595",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10595",
+      "price": [
+        {
+          "description": "L",
+          "value": "50.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "50.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0039_a_white.jpg",
+      "shortDescription": "Sleeveless slip dress with ruffled front and lace work",
+      "manufacturer": "Versatil",
+      "name": "Versatil Casual Evening Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_s_enabled.png",
+              "sequence": "2.00000",
+              "value": "S",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_s_enabled.png",
+              "uniqueID": "7000000000000000001",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "S"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_white.png",
+              "sequence": "8.00000",
+              "value": "White",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_white.png",
+              "uniqueID": "7000000000000000014",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "White"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-581"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-knit-casual-dress-aurorawmdrs-680",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10694",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10694",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0038_a_teal.jpg",
+      "shortDescription": "Printed sleeveless pencil dress",
+      "manufacturer": "Gusso",
+      "name": "Gusso Knit Casual Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xs_enabled.png",
+              "sequence": "1.00000",
+              "value": "XS",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xs_enabled.png",
+              "uniqueID": "7000000000000000004",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "XS"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_teal.png",
+              "sequence": "2.00000",
+              "value": "Teal",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_teal.png",
+              "uniqueID": "7000000000000000008",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Teal"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-680"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "luigi-valenti-strapless-cocktail-dress-aurorawmdrs-079",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10118",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10118",
+      "price": [
+        {
+          "description": "L",
+          "value": "250.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0006_a_red.jpg",
+      "shortDescription": "Strapless cocktail dress with appliqued roses and tassels at the hem",
+      "manufacturer": "Luigi Valenti",
+      "name": "Luigi Valenti Strapless Cocktail Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_l_enabled.png",
+              "sequence": "4.00000",
+              "value": "L",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_l_enabled.png",
+              "uniqueID": "7000000000000000003",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "L"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_red.png",
+              "sequence": "1.00000",
+              "value": "Red",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_red.png",
+              "uniqueID": "7000000000000000007",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Red"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-079"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-silk-evening-dress-aurorawmdrs-315",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10329",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10329",
+      "price": [
+        {
+          "description": "L",
+          "value": "250.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "250.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0024_a_silver.jpg",
+      "shortDescription": "Sleeveless evening dress with applique and sequined work",
+      "manufacturer": "Gusso",
+      "name": "Gusso Silk Evening Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_m_enabled.png",
+              "sequence": "3.00000",
+              "value": "M",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_m_enabled.png",
+              "uniqueID": "7000000000000000002",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "M"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+              "sequence": "9.00000",
+              "value": "Silver",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_silver.png",
+              "uniqueID": "7000000000000000015",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Silver"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-315"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-sleeveless-sequined-dress-aurorawmdrs-385",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10399",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10399",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0033_a_blue.jpg",
+      "shortDescription": "Sleeveless cocktail dress with high neck and sequence work",
+      "manufacturer": "Gusso",
+      "name": "Gusso Sleeveless Sequined Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xs_enabled.png",
+              "sequence": "1.00000",
+              "value": "XS",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_xs_enabled.png",
+              "uniqueID": "7000000000000000004",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "XS"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_blue.png",
+              "sequence": "6.00000",
+              "value": "Blue",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_blue.png",
+              "uniqueID": "7000000000000000012",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Blue"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-385"
+    },
+    {
+      "hasSingleSKU": false,
+      "seotoken": "gusso-sleeveless-sequined-dress-aurorawmdrs-387",
+      "catalogEntryTypeCode": "ItemBean",
+      "disallowRecurringOrder": "1",
+      "parentCatalogGroupID": [
+        "10001_10006",
+        "10051_10006",
+        "10052_10006",
+        "10601_10006",
+        "11101_10006",
+        "12601_10006"
+      ],
+      "uniqueID": "10401",
+      "resourceId": "https:\/\/159.8.241.44\/search\/resources\/store\/10201\/productview\/byId\/10401",
+      "price": [
+        {
+          "description": "L",
+          "value": "100.0",
+          "usage": "Display",
+          "currency": "USD"
+        },
+        {
+          "description": "I",
+          "value": "100.0",
+          "usage": "Offer",
+          "currency": "USD"
+        }
+      ],
+      "thumbnail": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/wcl000_dresses\/200x310\/wcl000_0033_a_blue.jpg",
+      "shortDescription": "Sleeveless cocktail dress with high neck and sequence work",
+      "manufacturer": "Gusso",
+      "name": "Gusso Sleeveless Sequined Dress",
+      "subscriptionTypeCode": "NONE",
+      "buyable": "true",
+      "attributes": [
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_m_enabled.png",
+              "sequence": "3.00000",
+              "value": "M",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_size\/size_m_enabled.png",
+              "uniqueID": "7000000000000000002",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "M"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Available Sizes",
+          "uniqueID": "7000000000000000001",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchSize",
+          "facetable": false,
+          "searchable": false
+        },
+        {
+          "storeDisplay": false,
+          "values": [
+            {
+              "image1": "images\/catalog\/apparel\/women\/Swatches\/swatch_blue.png",
+              "sequence": "6.00000",
+              "value": "Blue",
+              "image1path": "\/wcsstore\/ExtendedSitesCatalogAssetStore\/images\/catalog\/apparel\/women\/Swatches\/swatch_blue.png",
+              "uniqueID": "7000000000000000012",
+              "unitID": "C62",
+              "unitOfMeasure": "one",
+              "identifier": "Blue"
+            }
+          ],
+          "sequence": "1.00000",
+          "name": "Color",
+          "uniqueID": "7000000000000000002",
+          "usage": "Defining",
+          "comparable": true,
+          "displayable": true,
+          "identifier": "swatchcolor",
+          "facetable": true,
+          "searchable": true
+        }
+      ],
+      "storeID": "10051",
+      "partNumber": "AuroraWMDRS-387"
+    }
+  ],
+  "recordSetComplete": "false",
+  "recordSetStartNumber": 0,
+  "recordSetTotalMatches": 945,
+  "metaData": {
+    "price": "1"
+  },
+  "resourceName": "productview"
+}

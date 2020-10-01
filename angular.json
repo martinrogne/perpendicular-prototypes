@@ -137,6 +137,286 @@
           }
         }
       }
+    },
+    "perpendicular-core": {
+      "projectType": "library",
+      "root": "projects/perpendicular-core",
+      "sourceRoot": "projects/perpendicular-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/perpendicular-core/tsconfig.lib.json",
+            "project": "projects/perpendicular-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/perpendicular-core/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/perpendicular-core/src/test.ts",
+            "tsConfig": "projects/perpendicular-core/tsconfig.spec.json",
+            "karmaConfig": "projects/perpendicular-core/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/perpendicular-core/tsconfig.lib.json",
+              "projects/perpendicular-core/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "perpendicular-analytics": {
+      "projectType": "library",
+      "root": "projects/perpendicular-analytics",
+      "sourceRoot": "projects/perpendicular-analytics/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/perpendicular-analytics/tsconfig.lib.json",
+            "project": "projects/perpendicular-analytics/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/perpendicular-analytics/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/perpendicular-analytics/src/test.ts",
+            "tsConfig": "projects/perpendicular-analytics/tsconfig.spec.json",
+            "karmaConfig": "projects/perpendicular-analytics/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/perpendicular-analytics/tsconfig.lib.json",
+              "projects/perpendicular-analytics/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "perpendicular-factories-wcs": {
+      "projectType": "library",
+      "root": "projects/perpendicular-factories-wcs",
+      "sourceRoot": "projects/perpendicular-factories-wcs/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/perpendicular-factories-wcs/tsconfig.lib.json",
+            "project": "projects/perpendicular-factories-wcs/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/perpendicular-factories-wcs/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/perpendicular-factories-wcs/src/test.ts",
+            "tsConfig": "projects/perpendicular-factories-wcs/tsconfig.spec.json",
+            "karmaConfig": "projects/perpendicular-factories-wcs/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/perpendicular-factories-wcs/tsconfig.lib.json",
+              "projects/perpendicular-factories-wcs/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "perpendicular-models-wcs": {
+      "projectType": "library",
+      "root": "projects/perpendicular-models-wcs",
+      "sourceRoot": "projects/perpendicular-models-wcs/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/perpendicular-models-wcs/tsconfig.lib.json",
+            "project": "projects/perpendicular-models-wcs/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/perpendicular-models-wcs/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/perpendicular-models-wcs/src/test.ts",
+            "tsConfig": "projects/perpendicular-models-wcs/tsconfig.spec.json",
+            "karmaConfig": "projects/perpendicular-models-wcs/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/perpendicular-models-wcs/tsconfig.lib.json",
+              "projects/perpendicular-models-wcs/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "perpendicular-providers-wcs": {
+      "projectType": "library",
+      "root": "projects/perpendicular-providers-wcs",
+      "sourceRoot": "projects/perpendicular-providers-wcs/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/perpendicular-providers-wcs/tsconfig.lib.json",
+            "project": "projects/perpendicular-providers-wcs/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/perpendicular-providers-wcs/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/perpendicular-providers-wcs/src/test.ts",
+            "tsConfig": "projects/perpendicular-providers-wcs/tsconfig.spec.json",
+            "karmaConfig": "projects/perpendicular-providers-wcs/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/perpendicular-providers-wcs/tsconfig.lib.json",
+              "projects/perpendicular-providers-wcs/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "perpendicular-services-base": {
+      "projectType": "library",
+      "root": "projects/perpendicular-services-base",
+      "sourceRoot": "projects/perpendicular-services-base/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/perpendicular-services-base/tsconfig.lib.json",
+            "project": "projects/perpendicular-services-base/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/perpendicular-services-base/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/perpendicular-services-base/src/test.ts",
+            "tsConfig": "projects/perpendicular-services-base/tsconfig.spec.json",
+            "karmaConfig": "projects/perpendicular-services-base/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/perpendicular-services-base/tsconfig.lib.json",
+              "projects/perpendicular-services-base/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "perpendicular-services-mock": {
+      "projectType": "library",
+      "root": "projects/perpendicular-services-mock",
+      "sourceRoot": "projects/perpendicular-services-mock/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/perpendicular-services-mock/tsconfig.lib.json",
+            "project": "projects/perpendicular-services-mock/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/perpendicular-services-mock/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/perpendicular-services-mock/src/test.ts",
+            "tsConfig": "projects/perpendicular-services-mock/tsconfig.spec.json",
+            "karmaConfig": "projects/perpendicular-services-mock/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/perpendicular-services-mock/tsconfig.lib.json",
+              "projects/perpendicular-services-mock/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "cli": {
     "analytics": false

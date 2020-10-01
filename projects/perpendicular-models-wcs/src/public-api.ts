@@ -2,6 +2,6 @@
  * Public API Surface of perpendicular-models-wcs
  */
 
-export * from './lib/perpendicular-models-wcs.service';
-export * from './lib/perpendicular-models-wcs.component';
-export * from './lib/perpendicular-models-wcs.module';
+export { WCSIdentity } from './lib/wcs-identity.model';
+export { WCSProduct } from './lib/wcs-product.model';
+export { WCSSEOToken } from './lib/wcs-seotoken.model';

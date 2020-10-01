@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { PerpendicularAnalyticsComponent } from './perpendicular-analytics.component';
 
 
 
 @NgModule({
-  declarations: [PerpendicularAnalyticsComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [PerpendicularAnalyticsComponent]
+  exports: []
 })
 export class PerpendicularAnalyticsModule { }
+
+export * from 'google-tag-manager-provider/google-tag-manager-provider.module';

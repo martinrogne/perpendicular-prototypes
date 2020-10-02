@@ -4,12 +4,16 @@ import { CartService, AnalyticsService } from 'perpendicular-services-base';
 import { BehaviorSubject } from 'rxjs';
 
 import { CheckoutPageComponent } from './checkout-page.component';
+import { CartItemComponent } from '../cart-item/cart-item.component';
+import { MockComponent } from 'ng-mocks';
 
 describe('CheckoutPageComponent', () => {
   let spectator: Spectator<CheckoutPageComponent>;
   const createComponent = createComponentFactory( {
     component: CheckoutPageComponent,
-
+    declarations: [
+      MockComponent(CartItemComponent)
+    ],
     providers: [
       mockProvider(CartService, {
         state: new BehaviorSubject(new Cart())

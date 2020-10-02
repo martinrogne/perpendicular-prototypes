@@ -139,14 +139,6 @@ jobs:
       run:
         npm run ci:test:perpendicular-providers-wcs
 
-    - name: Test (perpendicular-services-base)
-      run:
-        npm run ci:test:perpendicular-services-base
-
-    - name: Test (perpendicular-core)
-      run:
-        npm run ci:test:perpendicular-services-base
-
   preview:
     runs-on: ubuntu-latest
     env:

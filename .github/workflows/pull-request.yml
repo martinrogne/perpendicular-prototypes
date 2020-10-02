@@ -46,35 +46,6 @@ jobs:
       run:
         npm run ci:lint
 
-  test:
-    runs-on: ubuntu-latest
-    env:
-      NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Cache node modules
-      uses: actions/cache@v1
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-
-    - name: Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-
-    - name: Install
-      run:
-        npm install
-
-    - name: Test
-      run:
-        npm run ci:test
-
   build:
     runs-on: ubuntu-latest
     env:
@@ -110,6 +81,10 @@ jobs:
       env:
         POEDITOR_API_KEY: ${{ secrets.POEDITOR_API_KEY }}
 
+    - name: Build libraries
+      run:
+        npm run ci:build-libs
+
     - name: Build
       run:
         npm run ci:build
@@ -119,6 +94,42 @@ jobs:
       with:
         name: artifacts
         path: dist
+
+  test:
+    runs-on: ubuntu-latest
+    env:
+      NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+    needs: build
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Download build artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: artifacts
+        path: dist
+
+    - name: Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: Install
+      run:
+        npm install
+
+    - name: Test
+      run:
+        npm run ci:test
 
   preview:
     runs-on: ubuntu-latest
@@ -131,11 +142,12 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: artifacts
+        path: dist
 
     - name: Publish
       uses: netlify/actions/cli@master
       with:
-        args: deploy --dir=demo
+        args: deploy --dir=dist/demo
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

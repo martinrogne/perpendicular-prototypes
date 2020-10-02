@@ -1,9 +1,9 @@
 on:
   push:
-    tags-ignore:
-      - '!v*'
     branches:
-      - develop
+    - develop
+    tags:
+    - '!v*'
 
 name: Develop
 jobs:

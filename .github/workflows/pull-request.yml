@@ -127,9 +127,33 @@ jobs:
       run:
         npm install
 
-    - name: Test
+    - name: Test (perpendicular-analytics)
       run:
-        npm run ci:test
+        npm run ci:test:perpendicular-analytics
+
+    - name: Test (perpendicular-core)
+      run:
+        npm run ci:test:perpendicular-core
+
+    - name: Test (perpendicular-factories-wcs)
+      run:
+        npm run ci:test:perpendicular-factories-wcs
+
+    - name: Test (perpendicular-models-wcs)
+      run:
+        npm run ci:test:perpendicular-models-wcs
+
+    - name: Test (perpendicular-providers-wcs)
+      run:
+        npm run ci:test:perpendicular-providers-wcs
+
+    - name: Test (perpendicular-services-base)
+      run:
+        npm run ci:test:perpendicular-services-base
+
+    - name: Test (perpendicular-core)
+      run:
+        npm run ci:test:perpendicular-services-base
 
   preview:
     runs-on: ubuntu-latest

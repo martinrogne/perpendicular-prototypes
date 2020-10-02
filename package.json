@@ -1,6 +1,6 @@
 {
   "name": "perpendicular-prototypes",
-  "version": "0.12.32",
+  "version": "0.12.33",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

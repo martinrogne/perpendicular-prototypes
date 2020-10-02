@@ -19,7 +19,7 @@ export class CartItemComponent implements OnInit {
   /**
    * Default constructor
    */
-  constructor(public factory: ICartFactory) {
+  constructor() {
     this.item = new CartItem();
   }
 

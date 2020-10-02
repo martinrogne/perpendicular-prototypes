@@ -14,7 +14,7 @@
     "ci:translate": "ng xi18n --format=xmb --outFile=i18n/messages.xmb",
     "ci:sync-translations": "poeditor --config=./.github/tools/poeditor.json",
     "ci:copy-redirects": "cp projects/demo/_redirects dist/demo/_redirects",
-    "ci:build-libs": "ng build --prod --project=perpendicular-core && ng build --prod --project=perpendicular-models-wcs && ng build --prod --project=perpendicular-factories-wcs && ng build --prod --project=perpendicular-providers-wcs && ng build --prod --project=perpendicular-services-base && ng build --prod --project=perpendicular-analytics"
+    "ci:build-libs": "ng build --prod --project=perpendicular-core && ng build --prod --project=perpendicular-models-wcs && ng build --prod --project=perpendicular-factories-wcs && ng build --prod --project=perpendicular-providers-wcs && ng build --prod --project=perpendicular-services-base && ng build --prod --project=perpendicular-analytics && ng build --prod --project=perpendicular-services-mock"
   },
   "private": true,
   "dependencies": {

@@ -131,10 +131,6 @@ jobs:
       run:
         npm run ci:test:perpendicular-analytics
 
-    - name: Test (perpendicular-core)
-      run:
-        npm run ci:test:perpendicular-core
-
     - name: Test (perpendicular-factories-wcs)
       run:
         npm run ci:test:perpendicular-factories-wcs

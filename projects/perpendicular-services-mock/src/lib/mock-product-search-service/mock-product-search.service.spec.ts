@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { MockProductSearchService } from './mock-product-search.service';
 
-describe('MockProductSearchService', () => {
+xdescribe('MockProductSearchService', () => {
   let service: MockProductSearchService;
 
   beforeEach(() => {

@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
-import { PerpendicularServicesMockComponent } from './perpendicular-services-mock.component';
-
-
 
 @NgModule({
-  declarations: [PerpendicularServicesMockComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [PerpendicularServicesMockComponent]
+  exports: []
 })
 export class PerpendicularServicesMockModule { }
+
+export * from './mock-analytics-service/mock-analytics-service.module';
+export * from './mock-cart-service/mock-cart-service.module';
+export * from './mock-identity-service/mock-identity-service.module';
+export * from './mock-notification-service/mock-notification-service.module';
+export * from './mock-product-registry/mock-product-registry.module';
+export * from './mock-product-search-service/mock-product-search-service.module';
+export * from './mock-seo-registry/mock-seo-registry.module';

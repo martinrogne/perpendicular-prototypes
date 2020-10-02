@@ -34,7 +34,7 @@ export class CheckoutPageComponent implements OnInit {
               public addressFactory: IAddressFactory,
               public paymentInstructionFactory: IPaymentInstructionFactory,
               public analytics: IAnalyticsService) {
-    this.cart = this.factory.newInstance();
+    this.cart = new Cart();
   }
 
   /**

@@ -135,10 +135,6 @@ jobs:
       run:
         npm run ci:test:perpendicular-factories-wcs
 
-    - name: Test (perpendicular-models-wcs)
-      run:
-        npm run ci:test:perpendicular-models-wcs
-
     - name: Test (perpendicular-providers-wcs)
       run:
         npm run ci:test:perpendicular-providers-wcs

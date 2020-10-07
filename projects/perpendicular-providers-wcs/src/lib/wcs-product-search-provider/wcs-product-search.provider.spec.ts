@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
 import { WCSProductFactory } from 'perpendicular-factories-wcs';
 
-fdescribe('WCSProductSearchProvier', () => {
+describe('WCSProductSearchProvier', () => {
   let spectator: SpectatorHttp<WCSProductSearchProvider>;
   const createService = createHttpFactory({
     service: WCSProductSearchProvider,

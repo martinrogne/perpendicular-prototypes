@@ -37,9 +37,16 @@ import {
   WCSIdentityProviderModule,
   WCSProductSearchProviderModule,
   WCSSEOProviderModule,
-  WCSIdentityCacheProviderModule
+  WCSIdentityCacheProviderModule,
+  WCSCartProviderModule
 } from 'perpendicular-providers-wcs';
-import { WCSIdentityFactoryModule, WCSProductFactoryModule, WCSSEOTokenFactoryModule } from 'perpendicular-factories-wcs';
+import {
+  WCSIdentityFactoryModule,
+  WCSProductFactoryModule,
+  WCSSEOTokenFactoryModule,
+  WCSCartFactoryModule,
+  WCSAddressFactoryModule, WCSPaymentInstructionFactoryModule, WCSShippingModeFactoryModule
+} from 'perpendicular-factories-wcs';
 import { GoogleTagManagerProviderModule } from 'perpendicular-analytics';
 
 import {
@@ -102,6 +109,11 @@ export class PerpendicularModule {
     WCSProductFactoryModule,
     WCSIdentityFactoryModule,
     WCSSEOTokenFactoryModule,
+    WCSCartFactoryModule,
+    WCSAddressFactoryModule,
+    WCSPaymentInstructionFactoryModule,
+    WCSShippingModeFactoryModule,
+
 
     // Perpendicular provider modules
     PerpendicularProvidersWCSModule,
@@ -109,6 +121,7 @@ export class PerpendicularModule {
     WCSIdentityProviderModule,
     WCSProductSearchProviderModule,
     WCSSEOProviderModule,
+    WCSCartProviderModule,
 
     // Perpendicular service modules
     CartServiceModule,

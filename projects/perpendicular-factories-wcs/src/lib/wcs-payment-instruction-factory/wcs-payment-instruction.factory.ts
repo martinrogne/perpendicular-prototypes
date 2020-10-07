@@ -1,5 +1,5 @@
 import { WCSPaymentMethod, WCSPaymentInstruction } from 'perpendicular-models-wcs';
-import { Inject, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 import { PaymentInstruction, PaymentMethod, IPaymentInstructionFactory } from 'perpendicular-core';
 /**
@@ -52,7 +52,6 @@ export class WCSPaymentInstructionFactory extends IPaymentInstructionFactory {
 
   /**
    * Returns true, if the payment method name is known to be a candidate for punchout payments.
-   * @param name
    */
   protected isPunchoutPaymentMethod(paymentMethodName: string): boolean {
     if ('NetsPunchoutV2' === paymentMethodName || 'SimplePunchout' === paymentMethodName) {

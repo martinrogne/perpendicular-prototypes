@@ -1,10 +1,10 @@
-import { WCSSEOTokenFactory } from './wcs-seo-token-factory.factory';
+import { WCSAddressFactory } from './wcs-address.factory';
 import { createServiceFactory, SpectatorService } from '@ngneat/spectator';
 
-describe('WCSSEOTokenFactory', () => {
-  let spectator: SpectatorService<WCSSEOTokenFactory>;
+describe('WCSAddressFactory', () => {
+  let spectator: SpectatorService<WCSAddressFactory>;
   const createService = createServiceFactory({
-    service: WCSSEOTokenFactory,
+    service: WCSAddressFactory,
   });
 
   beforeEach(() => spectator = createService());
@@ -13,4 +13,3 @@ describe('WCSSEOTokenFactory', () => {
     expect(spectator.service).toBeTruthy();
   });
 });
-

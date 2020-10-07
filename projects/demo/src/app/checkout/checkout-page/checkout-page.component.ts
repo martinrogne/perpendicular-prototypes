@@ -52,12 +52,6 @@ export class CheckoutPageComponent implements OnInit {
    * Simple one-step checkout function to be able to perform a checkout - just to verify Google Analytics
    */
   public async doCheckout(): Promise<void> {
-    console.log('do checkout!');
-
-    this.service.clearPaymentInstructions();
-
-    console.log('await c1...');
-
     const c1 = await this.service.state.pipe(filter(x => x.paymentInstructions.length === 0), first()).toPromise();
 
     console.log('c1: ', c1);

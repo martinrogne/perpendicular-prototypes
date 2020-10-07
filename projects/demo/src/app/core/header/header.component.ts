@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Injector, OnInit } from '@angular/core';
+import { Cart, ICartService, ICartFactory } from 'perpendicular-core';
+import { ServiceStateBind } from '../decorators/service-state-bind-decorator';
 
 /**
  * Component for rendering the persistent header of the site
@@ -6,15 +8,21 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  /**
+   * The current state of the cart
+   */
+  @ServiceStateBind(ICartService) public cart: Cart | undefined;
 
   /**
    * Default constructor
    */
-  constructor() { }
+  constructor(
+              public injector: Injector,
+              public factory: ICartFactory) {
+  }
 
   /**
    * Angular lifecycle hook

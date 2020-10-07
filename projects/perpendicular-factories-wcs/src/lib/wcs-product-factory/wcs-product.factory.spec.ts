@@ -7,7 +7,7 @@ import multiple from './data/product-multiple-response.json';
 import search from './data/product-search-response.json';
 
 
-fdescribe('WCSProductFactory', () => {
+describe('WCSProductFactory', () => {
   let spectator: SpectatorService<WCSProductFactory>;
   const createService = createServiceFactory({
     service: WCSProductFactory,

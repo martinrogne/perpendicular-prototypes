@@ -114,17 +114,6 @@ export abstract class ICartService<Z extends Cart = Cart> {
   public abstract setStoreLocation(storelocation: StoreLocation): void;
 
   /**
-   * Adds a payment instruction to the cart for the full amount
-   * @deprecated - use setPaymentMethod instead
-   */
-  public abstract addPaymentInstruction(paymentInstruction: PaymentInstruction): void;
-
-  /**
-   * Removes all existing payment instructions from the cart
-   */
-  public abstract clearPaymentInstructions(): void;
-
-  /**
    * Validates the current cart state, to see if it is ready for precheckout/checkout.
    */
   public abstract isCartReadyForCheckout(): boolean;

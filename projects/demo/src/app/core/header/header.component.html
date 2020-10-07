@@ -13,5 +13,6 @@
     <svg>
       <use xlink:href="assets/icons/shopping_cart.svg#shopping_cart"></use>
     </svg>
+    <span *ngIf="cart">{{ cart.items.length }}</span>
   </a>
 </div>

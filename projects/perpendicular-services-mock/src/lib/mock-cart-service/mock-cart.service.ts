@@ -79,8 +79,6 @@ export class MockCartService extends ICartService implements ModifiableState<Car
     spyOn(this as ICartService, 'setBillingAddress').and.callThrough();
     spyOn(this as ICartService, 'setShippingMode').and.callThrough();
     spyOn(this as ICartService, 'setStoreLocation').and.callThrough();
-    spyOn(this as ICartService, 'addPaymentInstruction').and.callThrough();
-    spyOn(this as ICartService, 'clearPaymentInstructions').and.callThrough();
     spyOn(this as ICartService, 'isCartReadyForCheckout').and.callThrough();
     spyOn(this as ICartService, 'getAllowedBillingAddresses').and.callThrough();
     spyOn(this as ICartService, 'getAllowedPaymentInfoWithOrder').and.callThrough();
@@ -168,15 +166,6 @@ export class MockCartService extends ICartService implements ModifiableState<Car
   public getCurrentPaymentInstructions(): PaymentInstruction[] {
     return [];
   }
-  /**
-   * See [[ICartService]]
-   */
-  public addPaymentInstruction(paymentInstruction: PaymentInstruction): void {}
-
-  /**
-   * See [[ICartService]]
-   */
-  public clearPaymentInstructions(): void {}
   /**
    * See [[ICartService]]
    */

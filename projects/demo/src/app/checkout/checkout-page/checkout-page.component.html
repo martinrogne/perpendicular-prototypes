@@ -1,5 +1,5 @@
-<app-cart-item *ngFor="let item of cart.items" [item]="item">
+<div *ngIf="cart">
+  <app-cart-item *ngFor="let item of cart.items" [item]="item">
 
-</app-cart-item>
-
-<button (click)="doCheckout()">Do checkout</button>
+  </app-cart-item>
+</div>

@@ -1,3 +1,5 @@
 <div *ngIf="item">
-  {{ item.name }} - {{ item.quantity }}
+  <span>{{ item.name }}</span>
+  <input appChangeQuantity [value]="item.quantity" [item]="item"/>
+  <button appRemoveFromCart [item]="item">Remove</button>
 </div>

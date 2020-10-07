@@ -101,11 +101,11 @@ export class MockCartService extends ICartService implements ModifiableState<Car
   /**
    * See [[ICartService]]
    */
-  public removeFromCart(item: string | GiftItem | CartItem): void {}
+  public removeFromCart(item: CartItem): void {}
   /**
    * See [[ICartService]]
    */
-  public adjustQuantity(item: string | CartItem, qty: number): void {}
+  public adjustQuantity(item: CartItem, qty: number): void {}
   /**
    * See [[ICartService]]
    */

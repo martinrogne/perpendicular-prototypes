@@ -55,13 +55,13 @@ export abstract class ICartService<Z extends Cart = Cart> {
    * Remove an item from cart
    * @param item either a cart items ```lineId``` or the cartItem itself, or a previously selected free gift.
    */
-  public abstract removeFromCart(item: string | CartItem | GiftItem): void;
+  public abstract removeFromCart(item: CartItem): void;
 
   /**
    * Change quantity of item in cart
    * @param item either a cart items ```lineId``` or the cartItem itself.
    */
-  public abstract adjustQuantity(item: string | CartItem, qty: number): void;
+  public abstract adjustQuantity(item: CartItem, qty: number): void;
 
   /**
    * Change the product bought for a given item. This may be used in scenarios where replacement

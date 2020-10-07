@@ -175,8 +175,12 @@ export class CartService extends ICartService {
    *
    * @param item the ```lineId``` of a cartItem or the CartItem itself.
    */
-  public removeFromCart(item: string | CartItem | GiftItem): void {
-    // FIXME: Simplify...
+  public removeFromCart(item: CartItem): void {
+    if (item.lineId) {
+      this.cartProvider.removeFromCart(item.lineId).then(x => {
+        this.loadFromServer();
+      });
+    }
   }
 
   /**
@@ -187,8 +191,12 @@ export class CartService extends ICartService {
    * @param item the ```lineId``` of a cartItem or the CartItem itself.
    * @param qty the new quantity to set.
    */
-  public adjustQuantity(item: string | CartItem, qty: number): void {
-    // FIXME: Simplify...
+  public adjustQuantity(item: CartItem, qty: number): void {
+    if (item.lineId) {
+      this.cartProvider.adjustQuantity(item.lineId, qty).then(x => {
+        this.loadFromServer();
+      });
+    }
   }
 
   /**

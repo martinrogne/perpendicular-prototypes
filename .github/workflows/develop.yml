@@ -56,7 +56,13 @@ jobs:
       run:
         npm run ci:build
 
-    - name: Publish
+    - name: Docs
+      run: |
+        npm run ci:typedoc
+        npm run ci:compodoc:perpendicular-core
+        npm run ci:compodoc:perpendicular-services-base
+
+    - name: Publish Storefront
       uses: netlify/actions/cli@master
       with:
         args: deploy --prod --dir=dist/demo
@@ -85,3 +91,19 @@ jobs:
         environment: production
         version: ${{ steps.changelog.outputs.tag }}
         sourcemaps: './dist/demo'
+
+    - name: Publish Typedoc
+      uses: netlify/actions/cli@master
+      with:
+        args: deploy --prod --dir=typedoc
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_TYPEDOC_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+    - name: Publish Compodoc
+      uses: netlify/actions/cli@master
+      with:
+        args: deploy --prod --dir=compodoc
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_COMPODOC_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

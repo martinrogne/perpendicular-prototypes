@@ -1,0 +1,21 @@
+{
+  "name": "Perpendicular",
+  "mode": "modules",
+  "out": "typedoc",
+  "theme": "default",
+  "ignoreCompilerErrors": "false",
+  "preserveConstEnums": "true",
+  "excludeExternals": "true",
+  "readme": "README.typedoc.md",
+  "exclude": [
+    "**/*.spec.ts",
+    "**/projects/demo/**/*",
+    "**/src/main.ts",
+    "**/src/polyfills.ts",
+    "**/src/test.ts",
+    "**/src/environments/**/*"
+  ],
+  "externalPattern": "@angular/*",
+  "external-modulemap": "projects/([\\w\\-_]+)/",
+  "stripInternal": "false"
+}

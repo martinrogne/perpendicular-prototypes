@@ -15,12 +15,13 @@
     "ci:test:perpendicular-models-wcs": "ng test --watch=false --browsers=chromeHeadless --project=perpendicular-models-wcs",
     "ci:test:perpendicular-providers-wcs": "ng test --watch=false --browsers=chromeHeadless --project=perpendicular-providers-wcs",
     "ci:test:perpendicular-services-base": "ng test --watch=false --browsers=chromeHeadless --project=perpendicular-services-base",
-    "ci:test:perpendicular-serices-mock": "ng test --watch=false --browsers=chromeHeadless --project=perpendicular-services-mock",
+    "ci:test:perpendicular-services-mock": "ng test --watch=false --browsers=chromeHeadless --project=perpendicular-services-mock",
+    "ci:test:perpendicular-directives": "ng test --watch=false --browsers=chromeHeadless --project=perpendicular-directives",
     "ci:lint": "ng lint",
     "ci:translate": "ng xi18n --format=xmb --outFile=i18n/messages.xmb",
     "ci:sync-translations": "poeditor --config=./.github/tools/poeditor.json",
     "ci:copy-redirects": "cp projects/demo/_redirects dist/demo/_redirects",
-    "ci:build-libs": "ng build --prod --project=perpendicular-core && ng build --prod --project=perpendicular-models-wcs && ng build --prod --project=perpendicular-factories-wcs && ng build --prod --project=perpendicular-providers-wcs && ng build --prod --project=perpendicular-services-base && ng build --prod --project=perpendicular-analytics && ng build --prod --project=perpendicular-services-mock"
+    "ci:build-libs": "ng build --prod --project=perpendicular-core && ng build --prod --project=perpendicular-models-wcs && ng build --prod --project=perpendicular-factories-wcs && ng build --prod --project=perpendicular-providers-wcs && ng build --prod --project=perpendicular-services-base && ng build --prod --project=perpendicular-analytics && ng build --prod --project=perpendicular-services-mock && ng build --prod --project=perpendicular-directives"
   },
   "private": true,
   "dependencies": {

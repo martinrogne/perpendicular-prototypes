@@ -1,10 +1,10 @@
 import { Directive, HostListener, Input } from '@angular/core';
-import { CartItem, ICartFactory, ICartService, Product } from 'perpendicular-core';
+import { CartItem, ICartFactory, ICartService } from 'perpendicular-core';
 
 @Directive({
-  selector: '[appChangeQuantity]'
+  selector: '[libCartRemove]'
 })
-export class ChangeQuantityDirective {
+export class CartRemoveDirective {
   /**
    * The item which may be removed from cart
    */
@@ -21,7 +21,7 @@ export class ChangeQuantityDirective {
   /**
    * Handler for the click action on an element
    */
-  @HostListener('change', ['$event.target']) onChange(target: HTMLInputElement): void {
-    this.service.adjustQuantity(this.item, Number(target.value));
+  @HostListener('click') onClick(): void {
+    this.service.removeFromCart(this.item);
   }
 }

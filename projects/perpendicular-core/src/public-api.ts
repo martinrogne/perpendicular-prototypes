@@ -234,6 +234,7 @@ export { OrderSearchQuery, OrderSearchResult, OrderSearchSortBy } from './lib/mo
 
 export { bufferTimeReactive } from './lib/util/bufferTimeReactive';
 export { WindowRef } from './lib/util/window-ref';
+export { OnInputChange } from './lib/util/on-input-change-decorator';
 
 export { LandingPage } from './lib/models/landing-page.model';
 export { ILandingPageFactory } from './lib/factories/landing-page.factory';

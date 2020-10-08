@@ -1,8 +1,8 @@
 <article *ngFor="let product of products; trackBy: trackByIndex; let i = index">
   <app-product-tile
     appLazyLoadProductPage
-    appAnalyticsProductClick
-    appAnalyticsProductImpression
+    libAnalyticsProductClick
+    libAnalyticsProductSummaryView
     [index]="i"
     [product]="product"
     list="search">

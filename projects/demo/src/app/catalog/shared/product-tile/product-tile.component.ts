@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { IAnalyticsService, IProductFactory, Product } from 'perpendicular-core';
+import { IProductFactory, Product } from 'perpendicular-core';
 
 /**
  * Simple component for rendering a product as a tile

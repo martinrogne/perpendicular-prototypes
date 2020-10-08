@@ -1,7 +1,6 @@
 /*
  * Public API Surface of perpendicular-directives
  */
-
 export { CartAddDirectiveModule } from './lib/cart-add-directive/cart-add-directive.module';
 export { CartRemoveDirectiveModule } from './lib/cart-remove-directive/cart-remove-directive.module';
 export { CartQuantityDirectiveModule } from './lib/cart-quantity-directive/cart-quantity-directive.module';

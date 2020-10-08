@@ -47,6 +47,10 @@
       "perpendicular-services-mock": [
         "dist/perpendicular-services-mock/perpendicular-services-mock",
         "dist/perpendicular-services-mock"
+      ],
+      "perpendicular-directives": [
+        "dist/perpendicular-directives/perpendicular-directives",
+        "dist/perpendicular-directives"
       ]
     }
   },

@@ -1,12 +1,8 @@
 import { Directive, HostListener, Input } from '@angular/core';
 import { IAnalyticsService, Product } from 'perpendicular-core';
 
-/**
- * Directive to handle registering the analytics event
- * when a product is clicked
- */
 @Directive({
-  selector: '[appAnalyticsProductClick]'
+  selector: '[libAnalyticsProductClick]'
 })
 export class AnalyticsProductClickDirective {
   /**
@@ -37,5 +33,4 @@ export class AnalyticsProductClickDirective {
       this.service.trackProductClick(this.product, this.list, this.index);
     }
   }
-
 }

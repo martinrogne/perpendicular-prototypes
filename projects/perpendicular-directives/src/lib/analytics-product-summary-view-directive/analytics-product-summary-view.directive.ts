@@ -1,14 +1,10 @@
 import { Directive, Input } from '@angular/core';
-import { IAnalyticsService, Product } from 'perpendicular-core';
-import { OnInputChange } from '../core/decorators/on-input-change-decorator';
+import { IAnalyticsService, Product, OnInputChange } from 'perpendicular-core';
 
-/**
- * Directive for tracking a product summary impression in a list
- */
 @Directive({
-  selector: '[appAnalyticsProductImpression]'
+  selector: '[libAnalyticsProductSummaryView]'
 })
-export class AnalyticsProductImpressionDirective {
+export class AnalyticsProductSummaryViewDirective {
   /**
    * The product to track
    */
@@ -42,7 +38,5 @@ export class AnalyticsProductImpressionDirective {
         this.analyticsService.trackProductImpressions([product], this.list, index);
       }
     }
-
   }
-
 }

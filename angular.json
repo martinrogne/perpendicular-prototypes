@@ -417,6 +417,46 @@
           }
         }
       }
+    },
+    "perpendicular-directives": {
+      "projectType": "library",
+      "root": "projects/perpendicular-directives",
+      "sourceRoot": "projects/perpendicular-directives/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/perpendicular-directives/tsconfig.lib.json",
+            "project": "projects/perpendicular-directives/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/perpendicular-directives/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/perpendicular-directives/src/test.ts",
+            "tsConfig": "projects/perpendicular-directives/tsconfig.spec.json",
+            "karmaConfig": "projects/perpendicular-directives/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/perpendicular-directives/tsconfig.lib.json",
+              "projects/perpendicular-directives/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "cli": {
     "analytics": false

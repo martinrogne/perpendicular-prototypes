@@ -139,6 +139,10 @@ jobs:
       run:
         npm run ci:test:perpendicular-providers-wcs
 
+    - name: Test (perpendicular-directives)
+      run:
+        npm run ci:test:perpendicular-directives
+
   preview:
     runs-on: ubuntu-latest
     env:

@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { PaginationComponent } from './pagination/pagination.component';
 import { FacetsComponent } from './facets/facets.component';
 import { DirectivesModule } from '../../directives/directives.module';
+import { CartAddDirectiveModule } from 'perpendicular-directives';
+import { AnalyticsProductSummaryViewDirectiveModule, AnalyticsProductClickDirectiveModule } from 'perpendicular-directives';
 
 /**
  * Shared module for catalog functionality
@@ -20,7 +22,10 @@ import { DirectivesModule } from '../../directives/directives.module';
   imports: [
     CommonModule,
     RouterModule,
-    DirectivesModule
+    DirectivesModule,
+    CartAddDirectiveModule,
+    AnalyticsProductSummaryViewDirectiveModule,
+    AnalyticsProductClickDirectiveModule
   ],
   exports: [
     ProductGridComponent,

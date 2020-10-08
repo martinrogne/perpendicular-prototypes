@@ -4,6 +4,7 @@ import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { CheckoutRoutingModule } from './checkout-routing.module';
 import { CartItemComponent } from './cart-item/cart-item.component';
 import { DirectivesModule } from '../directives/directives.module';
+import { CartRemoveDirectiveModule, CartQuantityDirectiveModule } from 'perpendicular-directives';
 
 
 /**
@@ -17,7 +18,9 @@ import { DirectivesModule } from '../directives/directives.module';
   imports: [
     CommonModule,
     CheckoutRoutingModule,
-    DirectivesModule
+    DirectivesModule,
+    CartRemoveDirectiveModule,
+    CartQuantityDirectiveModule
   ]
 })
 export class CheckoutModule { }

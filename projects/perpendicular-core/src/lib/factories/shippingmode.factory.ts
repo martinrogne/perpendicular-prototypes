@@ -19,4 +19,9 @@ export abstract class IShippingModeFactory {
      * instantiates a new ShippingMode object from JSON
      */
     public abstract newInstanceFromJSON(json: any): ShippingMode;
+
+    /**
+     * Instantiates a collection of Shipping Modes from a backend response
+     */
+    public abstract newInstancesFromJSON(json: any): Array<ShippingMode>;
 }

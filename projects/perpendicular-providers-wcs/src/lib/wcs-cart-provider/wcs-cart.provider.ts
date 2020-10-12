@@ -6,12 +6,10 @@ import {
   CartItemComponent,
   IProductRegistry,
   Product,
-  INotificationService,
   IDynamicKitConfigurationFactory,
   DynamicKitConfiguration,
   IAddressFactory,
   Cart,
-  CartItem,
   Address,
   PaymentMethod,
   ShippingMode,
@@ -40,8 +38,8 @@ export class WCSCartProvider extends ICartProvider {
     @Inject(PERPENDICULAR_HTTP) public http: HttpClient,
     public cartFactory: ICartFactory,
     public config: ProvidersWCSConfig,
-    @Optional() protected shipmodeFactory: IShippingModeFactory,
-    @Optional() protected paymentMethodFactory: IPaymentMethodFactory,
+    protected shipmodeFactory: IShippingModeFactory,
+    protected paymentMethodFactory: IPaymentMethodFactory,
     @Optional() protected productRegistry: IProductRegistry,
     @Optional() protected dynamicKitConfigurationFactory: IDynamicKitConfigurationFactory,
     @Optional() protected addressFactory: IAddressFactory,
@@ -262,7 +260,7 @@ export class WCSCartProvider extends ICartProvider {
     const params: HttpParams = this.getAllowedPaymentInfoParams(orderId);
 
     return this.http.get(url, { params }).pipe(
-      map(x => this.convertToPaymentMethodList()(x))
+      map(x => this.paymentMethodFactory.newInstancesFromJSON(x))
     ).toPromise();
   }
 
@@ -274,7 +272,7 @@ export class WCSCartProvider extends ICartProvider {
     const params: HttpParams = this.getAllowedPaymentInfoParams('');
 
     return this.http.get(url, { params }).pipe(
-      map(x => this.convertToPaymentMethodList()(x))
+      map(x => this.paymentMethodFactory.newInstancesFromJSON(x))
     ).toPromise();
   }
 
@@ -287,7 +285,7 @@ export class WCSCartProvider extends ICartProvider {
     const params: HttpParams = this.getAllowedShippingInfoParams(orderId);
 
     return this.http.get(url, { params }).pipe(
-      map(x => this.convertToShippingModes()(x))
+      map(x => this.shipmodeFactory.newInstancesFromJSON(x))
     ).toPromise();
   }
 
@@ -383,66 +381,6 @@ export class WCSCartProvider extends ICartProvider {
     }
 
     return result;
-  }
-
-  /**
-   * Deserializer for payment information
-   */
-  protected convertToPaymentMethodList(): (res: any) => Array<PaymentMethod> {
-    return res => {
-      const result = new Array<PaymentMethod>();
-      for (const infoIdx in res.usablePaymentInformation) {
-        if (!res.usablePaymentInformation.hasOwnProperty(infoIdx)) {
-          continue;
-        }
-        const usablePaymentInformation = res.usablePaymentInformation[infoIdx];
-        result.push(this.paymentMethodFactory.newInstanceFromJSON(usablePaymentInformation));
-      }
-
-      return result;
-    };
-  }
-
-  /**
-   * Deserializer for shipping modes. We are assuming single shipments only, and that all order items
-   * can use the same shipping mode.
-   *
-   * FIXME: find out if we can get the server to send back all shared shipping modes, instead of this
-   */
-  protected convertToShippingModes(): (res: any) => Array<ShippingMode> {
-    return res => {
-      const result = new Array<ShippingMode>();
-      // if server returns pr item shipping modes, just pick one.
-      if (!!res.orderItem) {
-        for (const itemIdx in res.orderItem) {
-          if (!res.orderItem.hasOwnProperty(itemIdx)) {
-            continue;
-          }
-          const usableShippingModes = res.orderItem[itemIdx];
-          for (const shipModeIdx in usableShippingModes.usableShippingMode) {
-            if (!usableShippingModes.usableShippingMode.hasOwnProperty(shipModeIdx)) {
-              continue;
-            }
-
-            const usableShippingMode = usableShippingModes.usableShippingMode[shipModeIdx];
-            result.push(this.shipmodeFactory.newInstanceFromJSON(usableShippingMode));
-          }
-          // we only inspect the first order items result.
-          break;
-        }
-      } else {
-        // otherwise, if the server returns shared shipping modes, pick that.
-        for (const shipModeIdx in res.usableShippingMode) {
-          if (!res.usableShippingMode.hasOwnProperty(shipModeIdx)) {
-            continue;
-          }
-
-          const usableShippingMode = res.usableShippingMode[shipModeIdx];
-          result.push(this.shipmodeFactory.newInstanceFromJSON(usableShippingMode));
-        }
-      }
-      return result;
-    };
   }
 
   protected convertToDynamicKitConfiguration(itemId: string): (res: any) => string {

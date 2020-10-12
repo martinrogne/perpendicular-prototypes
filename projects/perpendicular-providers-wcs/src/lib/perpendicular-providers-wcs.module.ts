@@ -19,3 +19,4 @@ export { WCSProductSearchProviderModule } from './wcs-product-search-provider/wc
 export { WCSSEOProviderModule} from './wcs-seo-provider/wcs-seo-provider.module';
 export { WCSIdentityCacheProviderModule } from './wcs-identity-cache-provider/wcs-identity-cache-provider.module';
 export { WCSCartProviderModule } from './wcs-cart-provider/wcs-cart-provider.module';
+export { WCSProfileProviderModule } from './wcs-profile-provider/wcs-profile-provider.module';

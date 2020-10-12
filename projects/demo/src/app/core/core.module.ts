@@ -30,7 +30,8 @@ import {
   RoutableProductSearchModule,
   SEORegistryModule,
   IdentityServiceModule,
-  NotificationServiceModule
+  NotificationServiceModule,
+  ProfileServiceModule
 } from 'perpendicular-services-base';
 import {
   PerpendicularProvidersWCSModule,
@@ -38,14 +39,17 @@ import {
   WCSProductSearchProviderModule,
   WCSSEOProviderModule,
   WCSIdentityCacheProviderModule,
-  WCSCartProviderModule
+  WCSCartProviderModule,
+  WCSProfileProviderModule
 } from 'perpendicular-providers-wcs';
 import {
   WCSIdentityFactoryModule,
   WCSProductFactoryModule,
   WCSSEOTokenFactoryModule,
   WCSCartFactoryModule,
-  WCSAddressFactoryModule, WCSPaymentInstructionFactoryModule, WCSShippingModeFactoryModule
+  WCSAddressFactoryModule,
+  WCSPaymentInstructionFactoryModule,
+  WCSShippingModeFactoryModule, WCSProfileFactoryModule, WCSPaymentMethodFactoryModule
 } from 'perpendicular-factories-wcs';
 import { GoogleTagManagerProviderModule } from 'perpendicular-analytics';
 
@@ -112,7 +116,9 @@ export class PerpendicularModule {
     WCSCartFactoryModule,
     WCSAddressFactoryModule,
     WCSPaymentInstructionFactoryModule,
+    WCSPaymentMethodFactoryModule,
     WCSShippingModeFactoryModule,
+    WCSProfileFactoryModule,
 
 
     // Perpendicular provider modules
@@ -122,6 +128,7 @@ export class PerpendicularModule {
     WCSProductSearchProviderModule,
     WCSSEOProviderModule,
     WCSCartProviderModule,
+    WCSProfileProviderModule,
 
     // Perpendicular service modules
     CartServiceModule,
@@ -131,6 +138,7 @@ export class PerpendicularModule {
     ProductRegistryModule,
     IdentityServiceModule,
     NotificationServiceModule,
+    ProfileServiceModule,
 
     // External core module dependencies
     Angulartics2Module.forRoot(),

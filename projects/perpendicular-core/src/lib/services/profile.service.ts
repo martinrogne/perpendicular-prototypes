@@ -17,13 +17,6 @@ export abstract class IProfileService<ProfileType extends Profile = Profile, Add
   }
 
   /**
-   * Notification service to other services that an address was saved.
-   *
-   * FIXME: See if we can get out of this.
-   */
-  public abstract addressChanged: EventEmitter<AddressType>;
-
-  /**
    * Upserts the address.
    *
    * If the nickname is not present in the addressbook, it is assumed to be an add operation, otherwise

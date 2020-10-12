@@ -63,7 +63,6 @@ export class MockCartService extends ICartService implements ModifiableState<Car
     public shippingModeFactory: IShippingModeFactory,
     public paymentMethodFactory: IPaymentMethodFactory,
     public addressFactory: IAddressFactory,
-    public orderService: IOrderService,
     public cartFactory: ICartFactory,
   ) {
     super();
@@ -122,7 +121,7 @@ export class MockCartService extends ICartService implements ModifiableState<Car
    * Returns a fake order
    */
   public checkout(): Promise<Order> {
-    return this.orderService.getOrder('1000');
+    return Promise.resolve(null as unknown as Order);
   }
 
   /**

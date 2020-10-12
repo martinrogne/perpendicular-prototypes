@@ -18,6 +18,8 @@ export * from './wcs-cart-factory/wcs-cart-factory.module';
 export * from './wcs-address-factory/wcs-address-factory.module';
 export * from './wcs-payment-instruction-factory/wcs-payment-instruction-factory.module';
 export * from './wcs-shipping-mode-factory/wcs-shipping-mode-factory.module';
+export * from './wcs-profile-factory/wcs-profile-factory.module';
+export * from './wcs-payment-method-factory/wcs-payment-method-factory.module';
 
 // Factories
 export { WCSIdentityFactory } from './wcs-identity-factory/wcs-identity.factory';
@@ -27,3 +29,5 @@ export { WCSCartFactory } from './wcs-cart-factory/wcs-cart.factory';
 export { WCSAddressFactory } from './wcs-address-factory/wcs-address.factory';
 export { WCSPaymentInstructionFactory } from './wcs-payment-instruction-factory/wcs-payment-instruction.factory';
 export { WCSShippingModeFactory } from './wcs-shipping-mode-factory/wcs-shipping-mode.factory';
+export { WCSProfileFactory } from './wcs-profile-factory/wcs-profile.factory';
+export { WCSPaymentMethodFactory } from './wcs-payment-method-factory/wcs-payment-method.factory';

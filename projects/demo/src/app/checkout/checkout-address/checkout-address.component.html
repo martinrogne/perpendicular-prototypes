@@ -1,0 +1,12 @@
+<form [formGroup]="addressForm" (ngSubmit)="saveAddress()" class="search">
+  <label>Firstname</label>
+  <input type="text" formControlName="firstName" />
+
+  <label>Lastname</label>
+  <input type="text" formControlName="lastName" />
+
+  <label>Email</label>
+  <input type="text" formControlName="email" />
+
+  <button type="submit">Save</button>
+</form>

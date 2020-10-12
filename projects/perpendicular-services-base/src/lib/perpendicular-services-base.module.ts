@@ -22,3 +22,5 @@ export * from './product-registry/product-registry.module';
 export * from './seo-registry/seo-registry.module';
 export * from './identity-service/identity-service.module';
 export * from './notification-service/notification-service.module';
+export * from './profile-service/profile-service.module';
+export * from './cookie-service/cookie-service.module';

@@ -1,8 +1,16 @@
 import { Spectator, createRoutingFactory } from '@ngneat/spectator';
 import { ProductTileComponent } from './product-tile.component';
-import { WCSProductFactoryModule } from 'perpendicular-factories-wcs';
+import {
+  WCSAddressFactoryModule,
+  WCSCartFactoryModule,
+  WCSPaymentInstructionFactoryModule,
+  WCSPaymentMethodFactoryModule,
+  WCSProductFactoryModule,
+  WCSShippingModeFactoryModule
+} from 'perpendicular-factories-wcs';
 import { ProvidersWCSConfig } from 'perpendicular-core';
 import { CartAddDirectiveModule } from 'perpendicular-directives';
+import { MockCartServiceModule } from 'perpendicular-services-mock';
 
 describe('ProductTileComponent', () => {
   let spectator: Spectator<ProductTileComponent>;
@@ -11,8 +19,14 @@ describe('ProductTileComponent', () => {
     declarations: [
     ],
     imports: [
+      MockCartServiceModule,
+      CartAddDirectiveModule,
       WCSProductFactoryModule,
-      CartAddDirectiveModule
+      WCSCartFactoryModule,
+      WCSShippingModeFactoryModule,
+      WCSPaymentInstructionFactoryModule,
+      WCSPaymentMethodFactoryModule,
+      WCSAddressFactoryModule
     ],
     providers: [
       ProvidersWCSConfig

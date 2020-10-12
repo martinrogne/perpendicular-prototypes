@@ -19,4 +19,9 @@ export abstract class IPaymentMethodFactory {
      * instantiates a new PaymentMethod object from JSON
      */
     public abstract newInstanceFromJSON(json: any): PaymentMethod;
+
+    /**
+     * Instantiates a collection of payment methods from a JSON response
+     */
+    public abstract newInstancesFromJSON(json: any): Array<PaymentMethod>;
 }

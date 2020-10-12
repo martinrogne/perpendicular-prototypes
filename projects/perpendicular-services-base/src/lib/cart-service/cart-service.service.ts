@@ -1,45 +1,27 @@
-import { from as observableFrom, Subject } from 'rxjs';
+import { BehaviorSubject, from as observableFrom, Observable, Subject } from 'rxjs';
 
-import { take, switchMap, skip } from 'rxjs/operators';
+import { first, switchMap } from 'rxjs/operators';
 import {
+  Address,
+  Cart,
+  CartItem,
+  CartItemComponent,
   DynamicKitConfiguration,
-  IOrganizationRegistry,
-  Organization,
-  IOrganizationFactory,
-  CARTSERVICE_BOPIS_DEFAULTLOCATIONID,
-  CARTSERVICE_BOPIS_DEFAULTLAT,
-  CARTSERVICE_BOPIS_DEFAULTLON,
+  GiftItem,
+  IAnalyticsService,
+  ICartFactory,
+  ICartProvider,
   ICartService,
   IIdentityService,
-  IProfileService,
-  IPaymentInstructionService,
-  INotificationService,
-  ICartFactory,
-  IProfileFactory,
-  IStoreLocationService,
-  IOrderService,
-  IAnalyticsService,
-  ICartProvider,
-  Profile,
-  UIMessage,
-  UIMessageType,
-  Cart,
-  Identity,
-  CartItem,
-  Product,
-  Address,
-  PaymentMethod,
-  PaymentInstruction,
-  ShippingMode,
   Order,
-  CartItemComponent,
+  Organization,
+  PaymentMethod,
+  ShippingMode,
   StoreLocation,
-  GiftItem,
-  IPaymentInstructionFactory,
+  UIMessage,
 } from 'perpendicular-core';
 
-import { Injectable, Inject, Optional } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Injectable } from '@angular/core';
 
 /**
  * Implements the CartService.
@@ -277,7 +259,7 @@ export class CartService extends ICartService {
    */
   public getAllowedPaymentInfo(): Promise<Array<PaymentMethod>> {
     // FIXME: Move to a different service
-    return Promise.resolve([]);
+    return this.cartProvider.getAllowedPaymentInfo();
   }
 
   /**
@@ -287,7 +269,7 @@ export class CartService extends ICartService {
    */
   public getAllowedShippingModes(): Promise<Array<ShippingMode>> {
     // FIXME: Move to a different service
-    return Promise.resolve([]);
+    return this.cartProvider.getAllowedShippingModes(this.lastCart.id || '');
   }
 
   /**
@@ -386,6 +368,7 @@ export class CartService extends ICartService {
   }
 
   protected emitState(c: Cart): void {
+    this.lastCart = c;
     this.internalState.next(c);
   }
 

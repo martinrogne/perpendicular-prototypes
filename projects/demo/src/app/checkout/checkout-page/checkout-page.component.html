@@ -1,5 +1,15 @@
+<h2>Cart</h2>
 <div *ngIf="cart">
   <app-cart-item *ngFor="let item of cart.items" [item]="item">
 
   </app-cart-item>
 </div>
+
+<h2>Address</h2>
+<app-checkout-address></app-checkout-address>
+
+<h2>Shipping method</h2>
+<app-shipping-method *ngFor="let method of shippingModes" [method]="method"></app-shipping-method>
+
+<h2>Payment method</h2>
+<app-payment-method *ngFor="let method of paymentMethods" [method]="method"></app-payment-method>

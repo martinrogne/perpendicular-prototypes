@@ -1,0 +1,133 @@
+{
+  "resourceId": "https:\/\/159.8.241.44:443\/wcs\/resources\/store\/10201\/cart\/@self\/usable_payment_info",
+  "usablePaymentInformation": [
+    {
+      "paymentTermConditionId": "",
+      "description": "Apple Pay",
+      "xumet_attrPageName": "SimplePunchout",
+      "language": "-1",
+      "paymentMethodName": "ApplePay",
+      "usableBillingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "xumet_policyId": "-12001"
+    },
+    {
+      "paymentTermConditionId": "",
+      "description": "Cash on delivery",
+      "xumet_attrPageName": "StandardCOD",
+      "language": "-1",
+      "paymentMethodName": "COD",
+      "usableBillingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "xumet_policyId": "10156"
+    },
+    {
+      "paymentTermConditionId": "",
+      "description": "Bill me later",
+      "xumet_attrPageName": "StandardBillMeLater",
+      "language": "-1",
+      "paymentMethodName": "BillMeLater",
+      "usableBillingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "xumet_policyId": "10154"
+    },
+    {
+      "paymentTermConditionId": "",
+      "description": "MasterCard Credit Card",
+      "xumet_attrPageName": "StandardMasterCard",
+      "language": "-1",
+      "paymentMethodName": "Master Card",
+      "usableBillingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "xumet_policyId": "10157"
+    },
+    {
+      "paymentTermConditionId": "",
+      "description": "Pay later",
+      "xumet_attrPageName": "StandardPayLater",
+      "language": "-1",
+      "paymentMethodName": "PayLater",
+      "usableBillingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "xumet_policyId": "10158"
+    },
+    {
+      "paymentTermConditionId": "",
+      "description": "VISA Credit Card",
+      "xumet_attrPageName": "StandardVisa",
+      "language": "-1",
+      "paymentMethodName": "VISA",
+      "usableBillingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "xumet_policyId": "10159"
+    },
+    {
+      "paymentTermConditionId": "",
+      "description": "Nets Credit Card",
+      "xumet_attrPageName": "SimplePunchout",
+      "language": "-1",
+      "paymentMethodName": "NetsPunchoutV2",
+      "usableBillingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "xumet_policyId": "9099990"
+    },
+    {
+      "paymentTermConditionId": "",
+      "description": "Check",
+      "xumet_attrPageName": "StandardCheck",
+      "language": "-1",
+      "paymentMethodName": "Check",
+      "usableBillingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "xumet_policyId": "10155"
+    },
+    {
+      "paymentTermConditionId": "",
+      "description": "American Express Credit Card",
+      "xumet_attrPageName": "StandardAmex",
+      "language": "-1",
+      "paymentMethodName": "AMEX",
+      "usableBillingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "xumet_policyId": "10153"
+    }
+  ],
+  "resourceName": "cart",
+  "orderId": "161488187713"
+}

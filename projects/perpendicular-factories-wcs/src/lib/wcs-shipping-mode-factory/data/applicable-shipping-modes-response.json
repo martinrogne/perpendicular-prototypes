@@ -1,0 +1,149 @@
+{
+  "usableShippingMode": [
+    {
+      "description": "Pickup in store",
+      "shipModeCode": "PickupInStore",
+      "shipModeId": "10001",
+      "language": "-1"
+    },
+    {
+      "description": "International Priority",
+      "shipModeCode": "International Priority",
+      "carrier": "International Carrier",
+      "shipModeId": "10704",
+      "language": "-1"
+    },
+    {
+      "description": "International Regular",
+      "shipModeCode": "International Regular",
+      "carrier": "International Carrier",
+      "shipModeId": "10705",
+      "language": "-1"
+    }
+  ],
+  "resourceId": "https:\/\/159.8.241.44:443\/wcs\/resources\/store\/10201\/cart\/@self\/usable_shipping_info?orderId=161488187713",
+  "orderItem": [
+    {
+      "usableShippingMode": [
+        {
+          "description": "Pickup in store",
+          "shipModeCode": "PickupInStore",
+          "shipModeId": "10001",
+          "language": "-1"
+        },
+        {
+          "description": "International Priority",
+          "shipModeCode": "International Priority",
+          "carrier": "International Carrier",
+          "shipModeId": "10704",
+          "language": "-1"
+        },
+        {
+          "description": "International Regular",
+          "shipModeCode": "International Regular",
+          "carrier": "International Carrier",
+          "shipModeId": "10705",
+          "language": "-1"
+        }
+      ],
+      "orderItemId": "605012",
+      "usableShippingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "usableShippingChargePolicy": [
+        {
+          "name": "StandardShippingChargeBySeller",
+          "uniqueID": "-7001",
+          "type": "ShippingCharge"
+        }
+      ]
+    },
+    {
+      "usableShippingMode": [
+        {
+          "description": "Pickup in store",
+          "shipModeCode": "PickupInStore",
+          "shipModeId": "10001",
+          "language": "-1"
+        },
+        {
+          "description": "International Priority",
+          "shipModeCode": "International Priority",
+          "carrier": "International Carrier",
+          "shipModeId": "10704",
+          "language": "-1"
+        },
+        {
+          "description": "International Regular",
+          "shipModeCode": "International Regular",
+          "carrier": "International Carrier",
+          "shipModeId": "10705",
+          "language": "-1"
+        }
+      ],
+      "orderItemId": "605014",
+      "usableShippingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "usableShippingChargePolicy": [
+        {
+          "name": "StandardShippingChargeBySeller",
+          "uniqueID": "-7001",
+          "type": "ShippingCharge"
+        }
+      ]
+    },
+    {
+      "usableShippingMode": [
+        {
+          "description": "Pickup in store",
+          "shipModeCode": "PickupInStore",
+          "shipModeId": "10001",
+          "language": "-1"
+        },
+        {
+          "description": "International Priority",
+          "shipModeCode": "International Priority",
+          "carrier": "International Carrier",
+          "shipModeId": "10704",
+          "language": "-1"
+        },
+        {
+          "description": "International Regular",
+          "shipModeCode": "International Regular",
+          "carrier": "International Carrier",
+          "shipModeId": "10705",
+          "language": "-1"
+        }
+      ],
+      "orderItemId": "605015",
+      "usableShippingAddress": [
+        {
+          "nickName": "Primary",
+          "addressId": "69211119308"
+        }
+      ],
+      "usableShippingChargePolicy": [
+        {
+          "name": "StandardShippingChargeBySeller",
+          "uniqueID": "-7001",
+          "type": "ShippingCharge"
+        }
+      ]
+    }
+  ],
+  "usableShippingAddress": [
+    {
+      "nickName": "Primary",
+      "addressId": "69211119308"
+    }
+  ],
+  "resourceName": "cart",
+  "orderId": "161488187713"
+}
